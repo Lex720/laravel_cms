@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 $I = new FunctionalTester($scenario);
 $I->am('a CMS Admin');
 $I->wantTo('delete a section');

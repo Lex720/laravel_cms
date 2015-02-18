@@ -14,4 +14,33 @@
 		{{ HTML::linkRoute('sections.create', 'Add a new section') }}
 	</p>
 
+	<p>There are {{ $sections->count() }} sections</p>
+
+	<table>
+		
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Slug URL</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			@foreach ($sections as $sections)
+
+			<tr>
+				<td class="name">{{ $sections->name }}</td>
+				<td>{{ $sections->slug_url }}</td>
+				<td>
+					{{ HTML::linkRoute('sections.show', 'Show', ['id' => $sections->id]) }}
+					{{ HTML::linkRoute('sections.edit', 'Edit', ['id' => $sections->id]) }}
+				</td>
+			</tr>
+
+			@endforeach
+		</tbody>
+
+	</table>
+
 @stop

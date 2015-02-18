@@ -18,7 +18,9 @@ class SectionsController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('sections/list');
+		$sections = Sections::all();
+
+		return View::make('sections/list', compact('sections'));
 	}
 
 
