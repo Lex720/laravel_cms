@@ -45,4 +45,8 @@
 		{{ Form::close() }}
 	</p>
 
+	<p>
+		{{ HTML::link(URL::previous(), 'Back') }}
+	</p>
+
 @stop
