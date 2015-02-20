@@ -46,7 +46,7 @@
 	</p>
 
 	<p>
-		{{ HTML::link(URL::previous(), 'Back') }}
+		{{ HTML::link(URL::previous(), 'Back', ['class' => 'back']) }}
 	</p>
 
 @stop
