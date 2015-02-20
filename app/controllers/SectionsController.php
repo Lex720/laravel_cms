@@ -18,7 +18,26 @@ class SectionsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$sections = Sections::all();
+		//$sections = Sections::search(Input::all());
+
+		$q = Sections::select();
+
+		if (Input::has('search_name'))
+		{
+			$sections = $q->where('name', Input::get('search_name'));
+		}
+
+		if (Input::has('search_published'))
+		{
+			$sections = $q->where('published', Input::get('search_published'));
+		}
+
+		if (Input::has('search_menu'))
+		{
+			$sections = $q->where('menu', Input::get('search_menu'));
+		}
+
+		$sections = $q->get();
 
 		return View::make('sections/list', compact('sections'));
 	}

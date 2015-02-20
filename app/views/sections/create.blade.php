@@ -10,7 +10,7 @@
 
   <h1>New section</h1>
 
- 	{{ Form::open(['route' => ['sections.store'], 'method' => 'POST']) }}
+ 	{{ Form::open(['route' => 'sections.store', 'method' => 'POST']) }}
 
  		@include ('sections/partials/fields')
 

@@ -8,12 +8,6 @@ $I->wantTo('List sections');
 // Metodo personalizado para haveRecord
 // tests\_support\FunctionalHelper.php
 $sections = $I->haveSections();
-
-
-// Imprime el array de sections
-//dd($sections->toArray());
-
-
 // And
 $I->amOnPage('sections');
 // Then

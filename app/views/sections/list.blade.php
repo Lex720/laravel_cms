@@ -16,6 +16,8 @@
 
 	<p>There are {{ $sections->count() }} sections</p>
 
+	@include ('sections/partials/filters')
+
 	<table>
 		
 		<thead>
@@ -33,8 +35,8 @@
 				<td class="name">{{ $sections->name }}</td>
 				<td>{{ $sections->slug_url }}</td>
 				<td>
-					{{ HTML::linkRoute('sections.show', 'Show', ['id' => $sections->id]) }}
-					{{ HTML::linkRoute('sections.edit', 'Edit', ['id' => $sections->id]) }}
+					{{ HTML::linkRoute('sections.show', 'Show', ['id' => $sections->id], ['class' => 'btn-show']) }}
+					{{ HTML::linkRoute('sections.edit', 'Edit', ['id' => $sections->id], ['class' => 'btn-edit']) }}
 				</td>
 			</tr>
 
