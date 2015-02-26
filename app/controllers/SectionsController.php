@@ -24,17 +24,17 @@ class SectionsController extends \BaseController {
 
 		if (Input::has('search_name'))
 		{
-			$sections = $q->where('name', Input::get('search_name'));
+			$q->where('name', Input::get('search_name'));
 		}
 
 		if (Input::has('search_published'))
 		{
-			$sections = $q->where('published', Input::get('search_published'));
+			$q->where('published', Input::get('search_published'));
 		}
 
 		if (Input::has('search_menu'))
 		{
-			$sections = $q->where('menu', Input::get('search_menu'));
+			$q->where('menu', Input::get('search_menu'));
 		}
 
 		$sections = $q->get();

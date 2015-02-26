@@ -1,0 +1,132 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 7.5px 0 15px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+	
+	.navbar img {
+		width: 30%;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.ajuste {
+	padding-bottom: 1.5%;
+}
+
+.social img {
+	width: 30px;
+	height: auto;
+	margin: 0 2px 0 2px;
+}
+
+#map_canvas {
+    width: 100%;
+    height: 300px;
+}
+
+.intro-section {
+    height: auto;
+    padding-top: 135px;
+    text-align: center;
+    background: #none;
+}
+
+.about-section {
+    height: auto;
+    padding-top: 120px;
+	padding-bottom: 50px;
+    text-align: center;
+	background: rgb(215,227,232); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(215,227,232,1) 0%, rgba(239,241,242,1) 10%, rgba(254,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(215,227,232,1)), color-stop(10%,rgba(239,241,242,1)), color-stop(100%,rgba(254,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(215,227,232,1) 0%,rgba(239,241,242,1) 10%,rgba(254,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(215,227,232,1) 0%,rgba(239,241,242,1) 10%,rgba(254,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(215,227,232,1) 0%,rgba(239,241,242,1) 10%,rgba(254,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(215,227,232,1) 0%,rgba(239,241,242,1) 10%,rgba(254,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7e3e8', endColorstr='#feffff',GradientType=0 ); /* IE6-9 */
+}
+
+.services-section {
+    height: auto;
+    padding-top: 120px;
+	padding-bottom: 50px;
+    text-align: center;
+	background: #E0E8EB;
+}
+
+.contact-section {
+    height: auto;
+    padding-top: 120px;
+	padding-bottom: 50px;
+    text-align: center;
+	background: rgb(254,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(239,241,242,1) 90%, rgba(215,227,232,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,255,1)), color-stop(90%,rgba(239,241,242,1)), color-stop(100%,rgba(215,227,232,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(239,241,242,1) 90%,rgba(215,227,232,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(239,241,242,1) 90%,rgba(215,227,232,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(239,241,242,1) 90%,rgba(215,227,232,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(239,241,242,1) 90%,rgba(215,227,232,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#d7e3e8',GradientType=0 ); /* IE6-9 */
+}
+
+.copyright-section {
+    height: auto;
+    padding: 10px 0 10px 0;
+    text-align: center;
+	background: #333;
+	color: #eee;
+}
+
+@media(max-width:767px) {
+	
+.navbar img {
+	width: auto;
+	height: 28px;
+	margin: 0;
+	padding: 0;
+}
+
+.social img {
+	width: 50px;
+	height: auto;
+	margin: 0 5px 0 5px;
+}
+	
+.intro-section,
+.about-section,
+.objetive-section,
+.contact-section {
+    padding-top: 45px;
+	padding-bottom: 0;
+}
+	
+}

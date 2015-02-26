@@ -1,10 +1,8 @@
 <?php
 
-Route::get('/', 'HomeController@showWelcome');
+Route::get('/', function()
+{
+    return View::make('index');
+});
 
 Route::resource('sections', 'SectionsController');
-
-/*Route::get('prueba', function()
-{
-    return View::make('prueba');
-});*/
