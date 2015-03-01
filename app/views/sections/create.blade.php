@@ -2,7 +2,7 @@
 
 @section('title')
 
-	CMS Laravel
+	Visionary Projects CMS
 
 @stop
 
@@ -21,7 +21,7 @@
  	{{ Form::close() }}
 
  	<p>
-		{{ HTML::link(URL::previous(), 'Back') }}
+		{{ HTML::linkRoute('sections.index', 'Back') }}
 	</p>
 
 @stop

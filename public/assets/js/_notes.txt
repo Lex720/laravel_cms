@@ -1,0 +1,19 @@
+Bootstrap generals:
+-bootstrap
+-bootstrap.min
+-npm
+
+
+Bootstrap NavBar:
+-scrolling-nav
+-jquery.easing.min
+
+
+Quote Rotator:
+-jquery.cbpQTRotator.min
+-modernizr.custom_qr
+
+
+Hover Effects:
+-toucheffects
+--modernizr.custom_he

@@ -124,7 +124,7 @@ class SectionsController extends \BaseController {
 
 			$sections->fill($data);
 			$sections->save();
-			return Redirect::to('sections/'. $sections->id);
+			return Redirect::route('sections.show', $sections->id);
 		}
 		else {
 

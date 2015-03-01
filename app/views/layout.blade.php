@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="{{ asset('favicon.ico') }}">
 
-    <title>@yield('title', 'Aprendiendo Laravel')</title>
+    <title>@yield('title', 'Visionary Projects CMS')</title>
 
     <!-- Bootstrap core CSS -->
     {{ HTML::style('assets/css/bootstrap.css') }}
@@ -37,7 +37,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://www.visiopro.com.ve/">Visiopro</a>
+          <a class="navbar-brand" href="{{ URL::to('/') }}">Visiopro</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">

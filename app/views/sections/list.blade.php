@@ -2,7 +2,7 @@
 
 @section('title')
 
-	CMS Laravel
+	Visionary Projects CMS
 
 @stop
 

@@ -33,12 +33,13 @@
     {{ HTML::style('assets/css/custom.css') }}
     
     <!--JS para BxSlider -->
-    <!-- jQuery library (served from Google) -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <!-- bxSlider Javascript file -->
-    {{ HTML::script('assets/bxslider/jquery.bxslider.min.js') }}
-    <!-- bxSlider CSS file -->
-    {{ HTML::style('assets/bxslider/jquery.bxslider.css') }}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> <!-- jQuery library (served from Google) -->
+    {{ HTML::script('assets/bxslider/jquery.bxslider.min.js') }} <!-- bxSlider Javascript file -->
+    {{ HTML::style('assets/bxslider/jquery.bxslider.css') }} <!-- bxSlider CSS file -->
+
+    <!-- Modernizr ¡NO ALTERAR EL ORDEN! -->
+    {{ HTML::script('assets/js/modernizr.custom_he.js') }} <!-- Hover Effects -->
+    {{ HTML::script('assets/js/modernizr.custom_qr.js') }} <!-- Quotes Rotator -->
     
     <!-- Google Map API -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -178,9 +179,9 @@
             
                     <p><b>¿Tienes un negocio y piensas en impulsar tus ventas?<br><br>¿Quieres dar a conocer tus servicios?<br><br>¿Piensas crecer en el mercado?</b></p><br>
             
-                    <h2 >Te tenemos la soluci&oacute;n!</h2><br>
+                    <h3>¡Te tenemos la soluci&oacute;n!</h3><br>
                     
-                    <p class="visible-xs"> {{ HTML::image('assets/img/logo2.png', '', array('class' => 'img-responsive')) }} </p><br>
+                    <p class="visible-xs"> {{ HTML::image('assets/img/logo.png', '', array('class' => 'img-responsive')) }} </p><br>
                     
                     <p> <p2><b>Visionary Projects</b></p2> es una compañ&iacute;a <p2>dedicada</p2> a brindarte soluciones de diseño y desarrollo web. Creamos <p2>paginas web dinamicas</p2> hechas a tu medida y necesidades. Estamos completamente comprometidos en ayudarte a <p2>impulsar tu imagen o empresa.</p2></p><br>
             
@@ -216,45 +217,77 @@
             
                     <div class="row">
 
-                        <ul id="og-grid" class="og-grid">
-                        
-                            <div class="col-sm-6 col-md-4">
-                                <li>
-                                <a href="#" data-largesrc="{{ url('assets/img/grid/1.png') }}" data-title="Diseño web" data-description="Hacemos que tu sitio web sea visualmente atractivo para así garatizar tu éxito. Tenemos conocimientos y experiencia en todas las áreas de diseño/desarrollo de sitios y su funcionalidad. Todos nuestros proyectos de diseño web son desarrollados con base y fundamento pensando en las necesidades de tu negocio.<br><br>El diseño web lo planificamos utilizando soluciones de vanguardia, a menudo de código abierto, limpio y semántico, compatible con los estándares del W3C.">{{ HTML::image('assets/img/grid/thumbs/1.png') }}</a>
-                                </li>
-                            </div>
+                        <ul class="grid cs-style-6">
+                            
+                            <li>
+                                <figure>
+                                    <img src="{{ ('assets/img/grid/1.png') }}" >
+                                    <figcaption>
+                                        <h3>Camera</h3>
+                                        <span>Jacob Cummings</span>
+                                        <a class="page-scroll" href="#contact">Contactanos</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
 
-                            <div class="col-sm-6 col-md-4">
-                                <li>
-                                <a href="#" data-largesrc="img/grid/b.png" data-title="Desarrollo Web" data-description="Te ofrecemos el mejor conjunto de tecnologías de software combinadas con los procesos de base de datos más el uso de un navegador en Internet, con el objetivo de crear una aplicacion adaptada completamente a tu negocio y a tus necesidades.<br><br>Primero planificamos y desarrollamos el sistema y el funcionamiento del software, nos encargamos de ofrecerte el mejor diseño final para tu web y despues integramos ambas partes para entregarte un sistema unico para ti.">{{ HTML::image('assets/img/grid/thumbs/2.png') }}</a>
-                                </li>
-                            </div>
+                            <li>
+                                <figure>
+                                    <img src="{{ ('assets/img/grid/2.png') }}" >
+                                    <figcaption>
+                                        <h3>Phone</h3>
+                                        <span>Jacob Cummings</span>
+                                        <a class="page-scroll" href="#contact">Contactanos</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
 
-                            <div class="col-sm-6 col-md-4">
-                                <li>
-                                <a href="#" data-largesrc="img/grid/c.png" data-title="Web adaptable" data-description="La navegación web en dispositivos móviles es cada vez más popular y se ha vuelto más común por lo que incorporamos un servicio de diseño web adaptativo con el cual el sitio se adaptara al entorno del usuario y el dispositivo que este en uso.<br><br>Optimizamos tu web para que sea vista de la mejor manera desde PCs, laptops, tablets y smartphones, todo esto con el objetivo de mejorar la experiencia de navegación del usuario, reduciendo costos de creación y mantenimiento.">{{ HTML::image('assets/img/grid/thumbs/3.png') }}</a>
-                                </li>
-                            </div>
+                            <li>
+                                <figure>
+                                    <img src="{{ ('assets/img/grid/3.png') }}" alt="img04">
+                                    <figcaption>
+                                        <h3>Settings</h3>
+                                        <span>Jacob Cummings</span>
+                                        <a class="page-scroll" href="#contact">Contactanos</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
 
-                            <div class="col-sm-6 col-md-4">
-                                <li>
-                                <a href="#" data-largesrc="img/grid/d.png" data-title="Diseño grafico" data-description="Hoy más que nunca todas las organizaciones necesitan diferenciarse unas de otras y sobre todo destacarse. Nos encargamos de desarrollar, crear y diseñar toda la imagen e identidad corporativa de su empresa, negocio o servicio, y nos ocuparemos de toda la comunicación gráfica que necesite.<br><br>Una identidad cuidadosamente construida es de gran ayuda para lograr que una organización, institución o empresa, tengan una proyección acertada.">{{ HTML::image('assets/img/grid/thumbs/4.png') }}</a>
-                                </li>
-                            </div>
+                            <li>
+                                <figure>
+                                    <img src="{{ ('assets/img/grid/4.png') }}" >
+                                    <figcaption>
+                                        <h3>Camera</h3>
+                                        <span>Jacob Cummings</span>
+                                        <a class="page-scroll" href="#contact">Contactanos</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
 
-                            <div class="col-sm-6 col-md-4">
-                                <li>
-                                <a href="#" data-largesrc="img/grid/e.png" data-title="Aplicaciones empresariales" data-description="Diseñamos y desarrollamos para ti un sistema en entorno web ya sea de forma interna (intranet) o externa que te ayude a solventar problemas presentes y/o agilizar los procesos dentro de tu empresa.<br><br>Ofrecemos aplicaciones capaces de llevar un registro de datos con métodos de consulta y modificación de los mismos, sistemas de reportes, control de pagos y mucho más.">{{ HTML::image('assets/img/grid/thumbs/5.png') }}</a>
-                                </li>
-                            </div>
+                            <li>
+                                <figure>
+                                    <img src="{{ ('assets/img/grid/5.png') }}" >
+                                    <figcaption>
+                                        <h3>Phone</h3>
+                                        <span>Jacob Cummings</span>
+                                        <a class="page-scroll" href="#contact">Contactanos</a>
+                                    </figcaption>
+                                </figure>
+                            </li>
 
-                            <div class="col-sm-6 col-md-4">
-                                <li>
-                                <a href="#" data-largesrc="img/grid/f.png" data-title="Marketing social" data-description="Te brindamos la mejor manera de darte a conocer mediante la publicidad. A través de nosotros podrás potenciar el valor de tu marca y conseguir que tu imagen corporativa y servicios se diferencien y se destaquen de tu competencia.<br><br>Una de las cosas más importantes a la hora de llevarlas a cabo, es saber bien que es lo que se va a comunicar, a quien y para qué, nosotros nos encargamos del cómo y te orientaremos a encontrar esas respuestas tras nuestra experiencia.">{{ HTML::image('assets/img/grid/thumbs/6.png') }}</a>
-                                </li>
-                            </div>
-
+                            <li>
+                                <figure>
+                                    <img src="{{ ('assets/img/grid/6.png') }}" alt="img04">
+                                    <figcaption>
+                                        <h3>Settings</h3>
+                                        <span>Jacob Cummings</span>
+                                        <a class="page-scroll" href="#contact">Contactanos</a>
+                                    </figcaption>
+                                </figure>
+                            </li>   
+                            
                         </ul>
+
+                        {{ HTML::script('assets/js/toucheffects.js') }}
 
                     </div>
                     
@@ -275,23 +308,11 @@
     
         <div class="container">
         
-        <h1>Contactanos</h1>
+            <h1>Contactanos</h1>
         
-        <p>Comunícate con nosotros hoy mismo para recibir la mejor asesoría, descubre todo lo que podemos hacer por ti.</p>
+            <p>Comunícate con nosotros hoy mismo para recibir la mejor asesoría, descubre todo lo que podemos hacer por ti.</p>
         
-        <br>
-        
-            <div class="row">
-            
-              <div class="col-xs-12 col-sm-12 col-md-12">
-                
-                  <div id="map_canvas" class="center-block"></div>
-
-              </div>
-
-      </div>
-            
-        <br><br>
+            <br>
             
             <div class="row text-justify">
                 
@@ -387,11 +408,82 @@
                 </div>
                 
             </div>
+        
+            <br><br><br>
+
+            <div class="row">
+                
+                <div class="col-xs-12 col-sm-12 col-md-12">
+
+                    <div id="cbp-qtrotator" class="cbp-qtrotator">
             
+                        <div class="cbp-qtcontent">
+                            <img src="{{ ('assets/img/quotes/1.jpg') }}" />
+                            <blockquote>
+                              <p>People eat meat and think they will become as strong as an ox, forgetting that the ox eats grass.</p>
+                              <footer>Pino Caruso</footer>
+                            </blockquote>
+                        </div>
+                        
+                        <div class="cbp-qtcontent">
+                            <img src="{{ ('assets/img/quotes/2.jpg') }}" />
+                            <blockquote>
+                              <p>Nothing will benefit human health and increase the chances for survival of life on Earth.</p>
+                              <footer>Albert Einstein</footer>
+                            </blockquote>
+                        </div>
+                        
+                        <div class="cbp-qtcontent">
+                            <img src="{{ ('assets/img/quotes/3.jpg') }}" />
+                            <blockquote>
+                              <p>If you don't want to be beaten then you shouldn't condone such behaviour towards anyone.</p>
+                              <footer>Moby</footer>
+                            </blockquote>
+                        </div>
+                        
+                        <div class="cbp-qtcontent">
+                            <img src="{{ ('assets/img/quotes/4.jpg') }}" />
+                            <blockquote>
+                              <p>My body will not be a tomb for other creatures.</p>
+                              <footer>Leonardo Da Vinci</footer>
+                            </blockquote>
+                        </div>
+                        
+                    </div>
+
+                    {{ HTML::script('assets/js/jquery.cbpQTRotator.min.js') }}
+                    <script>
+                        $( function() {
+                            /*
+                            - how to call the plugin:
+                            $( selector ).cbpQTRotator( [options] );
+                            - options:
+                            {
+                                // default transition speed (ms)
+                                speed : 700,
+                                // default transition easing
+                                easing : 'ease',
+                                // rotator interval (ms)
+                                interval : 8000
+                            }
+                            - destroy:
+                            $( selector ).cbpQTRotator( 'destroy' );
+                            */
+
+                            $( '#cbp-qtrotator' ).cbpQTRotator();
+
+                        } );
+                    </script>
+
+                    <!-- MAPA -->
+                    <!--<div id="map_canvas" class="center-block"></div>-->
+
+                </div>
+
+            </div>
+        
         </div>
-        
-        <br><br>
-        
+
     </section>
     <!-- Separador -->
     </div>
@@ -416,24 +508,12 @@
     
     </section>
 
-
-    <!-- jQuery Version 1.11.0 
-    <script src="js/jquery-1.11.0.js"></script> -->
-
     <!-- Bootstrap Core JavaScript -->
     {{ HTML::script('assets/js/bootstrap.min.js') }}
 
     <!-- Scrolling Nav JavaScript -->
     {{ HTML::script('assets/js/jquery.easing.min.js') }}
     {{ HTML::script('assets/js/scrolling-nav.js') }}
-
-    <!-- JavaScript para GRID -->
-    <script src="js/grid.js"></script>
-    <script>
-        $(function() {
-        Grid.init();
-        });
-    </script>
 
 </body>
 

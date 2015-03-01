@@ -2,7 +2,7 @@
 
 @section('title')
 
-	CMS Laravel
+	Visionary Projects CMS
 
 @stop
 
@@ -46,7 +46,7 @@
 	</p>
 
 	<p>
-		{{ HTML::link(URL::previous(), 'Back', ['class' => 'back']) }}
+		{{ HTML::link(URL::to('sections'), 'Back', ['class' => 'back']) }}
 	</p>
 
 @stop
