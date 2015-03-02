@@ -45,4 +45,11 @@
 
 	</table>
 
+	<br>
+
+	<p>
+		{{ HTML::linkAction('AuthController@logOut', 'Log out') }}
+		
+	</p>
+
 @stop
