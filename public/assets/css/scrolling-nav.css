@@ -16,10 +16,18 @@ html {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 8px 0 8px 0;
+        padding: 10px 0 10px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+	    background: #c8d7dc; /* Old browsers */
+		background: -moz-linear-gradient(top,  #c8d7dc 0%, #e3eaed 10%, #f2f5f6 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c8d7dc), color-stop(10%,#e3eaed), color-stop(100%,#f2f5f6)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #c8d7dc 0%,#e3eaed 10%,#f2f5f6 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #c8d7dc 0%,#e3eaed 10%,#f2f5f6 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #c8d7dc 0%,#e3eaed 10%,#f2f5f6 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #c8d7dc 0%,#e3eaed 10%,#f2f5f6 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8d7dc', endColorstr='#f2f5f6',GradientType=0 ); /* IE6-9 */
     }
 
     .top-nav-collapse {
@@ -30,7 +38,7 @@ html {
 		width: 30%;
 		height: auto;
 		margin: 0;
-		padding: 0;
+		padding: 2% 0 0 0;
 	}
 }
 
@@ -106,27 +114,39 @@ of those sections to manage the look and feel of the site. */
 	color: #eee;
 }
 
-@media(max-width:767px) {
-	
-.navbar img {
-	width: auto;
-	height: 28px;
-	margin: 0;
-	padding: 0;
+@media(max-width:1024px) {
+
+	.navbar {
+	    padding: 15px 0 10px 0;
+	}
+
 }
 
-.social img {
-	width: 50px;
-	height: auto;
-	margin: 0 5px 0 5px;
-}
-	
-.intro-section,
-.about-section,
-.objetive-section,
-.contact-section {
-    padding-top: 45px;
-	padding-bottom: 0;
-}
+@media(max-width:767px) {
+
+	.navbar {
+	    padding: 10px 0 10px 0;
+	}
+		
+	.navbar img {
+		width: auto;
+		height: 28px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.social img {
+		width: 50px;
+		height: auto;
+		margin: 0 5px 0 5px;
+	}
+		
+	.intro-section,
+	.about-section,
+	.objetive-section,
+	.contact-section {
+	    padding-top: 45px;
+		padding-bottom: 0;
+	}
 	
 }

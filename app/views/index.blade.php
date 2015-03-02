@@ -122,7 +122,7 @@
                         </ul>
                     </li>-->
                     <li>
-                        <a class="page-scroll" href="#contact">Contactanos</a>
+                        <a class="page-scroll" href="#contact">Cont&aacute;ctanos</a>
                     </li>
                 </ul> 
             </div>
@@ -195,10 +195,6 @@
                     
                     <p>Cont&aacute;ctenos Hoy! y vea como nuestros servicios de diseño y desarrollo web lo pueden ayudar a cumplir sus metas.. <p2><b>Lo esperamos!</b></p2></p><br>
                     
-                    <br><br>
-                    
-                    <a class="btn btn-primary page-scroll" href="#services">¡Nuestros servicios!</a><br><br><br>
-                    
                 </div>
             </div>
         </div>
@@ -225,7 +221,7 @@
                                     <figcaption>
                                         <h3>Camera</h3>
                                         <span>Jacob Cummings</span>
-                                        <a class="page-scroll" href="#contact">Contactanos</a>
+                                        <a class="page-scroll" href="#contact">Pedir servicio</a>
                                     </figcaption>
                                 </figure>
                             </li>
@@ -236,7 +232,7 @@
                                     <figcaption>
                                         <h3>Phone</h3>
                                         <span>Jacob Cummings</span>
-                                        <a class="page-scroll" href="#contact">Contactanos</a>
+                                        <a class="page-scroll" href="#contact">Pedir servicio</a>
                                     </figcaption>
                                 </figure>
                             </li>
@@ -247,7 +243,7 @@
                                     <figcaption>
                                         <h3>Settings</h3>
                                         <span>Jacob Cummings</span>
-                                        <a class="page-scroll" href="#contact">Contactanos</a>
+                                        <a class="page-scroll" href="#contact">Pedir servicio</a>
                                     </figcaption>
                                 </figure>
                             </li>
@@ -258,7 +254,7 @@
                                     <figcaption>
                                         <h3>Camera</h3>
                                         <span>Jacob Cummings</span>
-                                        <a class="page-scroll" href="#contact">Contactanos</a>
+                                        <a class="page-scroll" href="#contact">Pedir servicio</a>
                                     </figcaption>
                                 </figure>
                             </li>
@@ -269,7 +265,7 @@
                                     <figcaption>
                                         <h3>Phone</h3>
                                         <span>Jacob Cummings</span>
-                                        <a class="page-scroll" href="#contact">Contactanos</a>
+                                        <a class="page-scroll" href="#contact">Pedir servicio</a>
                                     </figcaption>
                                 </figure>
                             </li>
@@ -280,7 +276,7 @@
                                     <figcaption>
                                         <h3>Settings</h3>
                                         <span>Jacob Cummings</span>
-                                        <a class="page-scroll" href="#contact">Contactanos</a>
+                                        <a class="page-scroll" href="#contact">Pedir servicio</a>
                                     </figcaption>
                                 </figure>
                             </li>   
@@ -290,10 +286,6 @@
                         {{ HTML::script('assets/js/toucheffects.js') }}
 
                     </div>
-                    
-                    <br><br>
-                    
-                    <a class="btn btn-primary page-scroll" href="#contact">¡Contactanos!</a><br><br><br>
                     
                 </div>
             </div>
