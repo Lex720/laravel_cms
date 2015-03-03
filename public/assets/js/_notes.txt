@@ -9,7 +9,7 @@ Bootstrap NavBar:
 -jquery.easing.min
 
 
-Parallax ContentS lider:
+Parallax Content Slider:
 -jquery.cslider
 -modernizr.custom_ps
 

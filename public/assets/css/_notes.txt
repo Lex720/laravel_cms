@@ -8,7 +8,7 @@ Bootstrap NavBar:
 -scrolling-nav
 
 
-Parallax ContentS lider:
+Parallax Content Slider:
 -parallax-slider
 
 
