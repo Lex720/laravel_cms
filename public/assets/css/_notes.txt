@@ -8,5 +8,9 @@ Bootstrap NavBar:
 -scrolling-nav
 
 
+Parallax ContentS lider:
+-parallax-slider
+
+
 Custom CSS:
 -custom

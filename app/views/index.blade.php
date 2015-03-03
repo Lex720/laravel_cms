@@ -24,6 +24,9 @@
     <meta content="http://www.visiopro.com.ve/" property="og:url"></meta>
     <meta content="https://www.facebook.com/#" property="article:publisher"></meta>
 
+    <!-- jQuery library (served from Google) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>    
+
     <!-- Bootstrap core CSS -->
     {{ HTML::style('assets/css/bootstrap.css') }}
     {{ HTML::style('assets/css/bootstrap.min.css') }}
@@ -31,15 +34,15 @@
 
     <!-- Custom styles for this template -->
     {{ HTML::style('assets/css/custom.css') }}
-    
-    <!--JS para BxSlider -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> <!-- jQuery library (served from Google) -->
-    {{ HTML::script('assets/bxslider/jquery.bxslider.min.js') }} <!-- bxSlider Javascript file -->
-    {{ HTML::style('assets/bxslider/jquery.bxslider.css') }} <!-- bxSlider CSS file -->
+
+    <!-- Parallax Slider -->
+    {{ HTML::style('assets/css/parallax-slider.css') }}
+    {{ HTML::script('assets/js/jquery.cslider.js') }}
 
     <!-- Modernizr ¡NO ALTERAR EL ORDEN! -->
-    {{ HTML::script('assets/js/modernizr.custom_he.js') }} <!-- Hover Effects -->
-    {{ HTML::script('assets/js/modernizr.custom_qr.js') }} <!-- Quotes Rotator -->
+    {{ HTML::script('assets/js/modernizr.custom_qr.js') }} <!-- Quotes Rotator  -->
+    {{ HTML::script('assets/js/modernizr.custom_he.js') }} <!-- Hover Effects   -->
+    {{ HTML::script('assets/js/modernizr.custom_ps.js') }} <!-- Parallax Slider -->
     
     <!-- Google Map API -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -112,15 +115,6 @@
                     <li>
                         <a class="page-scroll" href="#services">Servicios</a>
                     </li>
-                    <!--<li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                          Dropdown <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#mision">Mision</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#vision">Vision</a></li>
-                        </ul>
-                    </li>-->
                     <li>
                         <a class="page-scroll" href="#contact">Cont&aacute;ctanos</a>
                     </li>
@@ -136,33 +130,50 @@
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
         <div class="container-fluid">
-        <div class="row">
-                
-                  <ul class="bxslider hidden-xs">
-                        <li><a> {{ HTML::image('assets/img/slider/1.jpg') }} </a></li>
-                        <li><a> {{ HTML::image('assets/img/slider/2.jpg') }} </a></li>
-                        <li><a> {{ HTML::image('assets/img/slider/3.jpg') }} </a></li>
-                        <li><a> {{ HTML::image('assets/img/slider/4.jpg') }} </a></li>
-                  </ul>
-                    
-                    <ul class="bxslider visible-xs">
-                        <li><a> {{ HTML::image('assets/img/slider/1a.jpg') }} </a></li>
-                        <li><a> {{ HTML::image('assets/img/slider/2a.jpg') }} </a></li>
-                        <li><a> {{ HTML::image('assets/img/slider/3a.jpg') }} </a></li>
-                        <li><a> {{ HTML::image('assets/img/slider/4a.jpg') }} </a></li>
-                  </ul>
-                    
+            <div class="row">
+
+                <!-- Parallax Slider -->
+                <div id="da-slider" class="da-slider">
+                    <div class="da-slide">
+                        <h2>Easy management</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <a href="#" class="da-link">Read more</a>
+                        <div class="da-img"> {{ HTML::image('assets/img/slider/parallax/1.png') }} </div>
+                    </div>
+                    <div class="da-slide">
+                        <h2>Revolution</h2>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <a href="#" class="da-link">Read more</a>
+                        <div class="da-img"> {{ HTML::image('assets/img/slider/parallax/2.png') }} </div>
+                    </div>
+                    <div class="da-slide">
+                        <h2>Warm welcome</h2>
+                        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
+                        <a href="#" class="da-link">Read more</a>
+                        <div class="da-img"> {{ HTML::image('assets/img/slider/parallax/3.png') }} </div>
+                    </div>
+                    <div class="da-slide">
+                        <h2>Quality Control</h2>
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                        <a href="#" class="da-link">Read more</a>
+                        <div class="da-img"> {{ HTML::image('assets/img/slider/parallax/4.png') }} </div>
+                    </div>
+                    <nav class="da-arrows">
+                        <span class="da-arrows-prev"></span>
+                        <span class="da-arrows-next"></span>
+                    </nav>
+                </div>
+        
                 <script type="text/javascript">
-                $(document).ready(function(){
-                  $('.bxslider').bxSlider({
-                    auto: true,
-                    mode: 'fade',
-                    autoControls: false,
-                    adaptiveHeight: false,
-                    captions: false,
-                  });
-                });
-              </script>
+                    $(function() {
+                    
+                        $('#da-slider').cslider({
+                            autoplay    : false,
+                            bgincrement : 450
+                        });
+                    
+                    });
+                </script>
 
             </div>
         </div>

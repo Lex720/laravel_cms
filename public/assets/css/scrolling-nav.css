@@ -14,20 +14,23 @@ html {
     height: 100%;
 }
 
-@media(min-width:767px) {
+@media(min-width:768px) {
     .navbar {
+    	z-index: 3000;
         padding: 10px 0 10px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
-	    background: #c8d7dc; /* Old browsers */
-		background: -moz-linear-gradient(top,  #c8d7dc 0%, #e3eaed 10%, #f2f5f6 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c8d7dc), color-stop(10%,#e3eaed), color-stop(100%,#f2f5f6)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top,  #c8d7dc 0%,#e3eaed 10%,#f2f5f6 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top,  #c8d7dc 0%,#e3eaed 10%,#f2f5f6 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top,  #c8d7dc 0%,#e3eaed 10%,#f2f5f6 100%); /* IE10+ */
-		background: linear-gradient(to bottom,  #c8d7dc 0%,#e3eaed 10%,#f2f5f6 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8d7dc', endColorstr='#f2f5f6',GradientType=0 ); /* IE6-9 */
+	    background: #c8d7dc;
+		background: -moz-linear-gradient(top,  #c8d7dc 0%, #e3eaed 10%, #f2f5f6 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c8d7dc), color-stop(10%,#e3eaed), color-stop(100%,#f2f5f6));
+		background: -webkit-linear-gradient(top,  #c8d7dc 0%,#e3eaed 10%,#f2f5f6 100%);
+		background: -o-linear-gradient(top,  #c8d7dc 0%,#e3eaed 10%,#f2f5f6 100%);
+		background: -ms-linear-gradient(top,  #c8d7dc 0%,#e3eaed 10%,#f2f5f6 100%);
+		background: linear-gradient(to bottom,  #c8d7dc 0%,#e3eaed 10%,#f2f5f6 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8d7dc', endColorstr='#f2f5f6',GradientType=0 );
+		border-bottom: 2px solid #DFDDDB;
+		/*background: none;*/
     }
 
     .top-nav-collapse {
@@ -63,9 +66,9 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section {
     height: auto;
-    padding-top: 135px;
+    padding-top: 0;
     text-align: center;
-    background: #none;
+    background: none;
 }
 
 .about-section {

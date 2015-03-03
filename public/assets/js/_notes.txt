@@ -9,6 +9,11 @@ Bootstrap NavBar:
 -jquery.easing.min
 
 
+Parallax ContentS lider:
+-jquery.cslider
+-modernizr.custom_ps
+
+
 Quote Rotator:
 -jquery.cbpQTRotator.min
 -modernizr.custom_qr
