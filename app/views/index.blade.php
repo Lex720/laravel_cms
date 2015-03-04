@@ -73,6 +73,26 @@
 
     <!-- Loader Script -->
     <script type="text/javascript"> $(window).load(function() {$(".loader").fadeOut("slow");})</script>
+
+    <!-- Class Script -->
+    <script type="text/javascript">
+
+        //Remove Class Script
+        $(window).load(function() {
+            if ($(window).width() < 768) {
+                $(".navbar").addClass("navbar-default");
+            }   
+        });
+        //Resize Class Script
+        $(window).resize(function() {
+            if ($(window).width() < 768) {
+                $(".navbar").addClass("navbar-default");
+            }
+            else {
+                $(".navbar").removeClass("navbar-default");
+            }
+        });
+    </script>
     
 </head>
 
@@ -89,7 +109,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-fixed-top" role="navigation">
         
         <div class="container">
             
@@ -105,7 +125,7 @@
             </div>
 
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav pull-right ajuste">
+                <ul class="nav navbar-nav pull-right">
                     <li>
                         <a class="page-scroll" href="#page-top">Inicio</a>
                     </li>
@@ -124,7 +144,6 @@
             
         </div>
         <!-- /.container -->
-        
     </nav>
 
     <!-- Intro Section -->
