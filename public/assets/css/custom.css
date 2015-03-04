@@ -1,14 +1,5 @@
 /* Global properties ======================================================== */
 
-/* Reset */
-*,
-*:after,
-*:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before,
 .clearfix:after {
@@ -18,6 +9,25 @@
 
 .clearfix:after {
     clear: both;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/* Reset */
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 a:hover {
@@ -36,42 +46,124 @@ p p2 {
     color: #428BCA;
 }
 
+.social img {
+    width: 30px;
+    height: auto;
+    margin: 0 2px 0 2px;
+}
+
+#map_canvas {
+    width: 100%;
+    height: 300px;
+}
+
+.intro-section {
+    height: auto;
+    padding-top: 0;
+    text-align: center;
+    background: none;
+}
+
+.about-section {
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    text-align: center;
+    background: rgb(215,227,232); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(215,227,232,1) 0%, rgba(239,241,242,1) 10%, rgba(254,255,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(215,227,232,1)), color-stop(10%,rgba(239,241,242,1)), color-stop(100%,rgba(254,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(215,227,232,1) 0%,rgba(239,241,242,1) 10%,rgba(254,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(215,227,232,1) 0%,rgba(239,241,242,1) 10%,rgba(254,255,255,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(215,227,232,1) 0%,rgba(239,241,242,1) 10%,rgba(254,255,255,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(215,227,232,1) 0%,rgba(239,241,242,1) 10%,rgba(254,255,255,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7e3e8', endColorstr='#feffff',GradientType=0 ); /* IE6-9 */
+}
+
+.services-section {
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    text-align: center;
+    background: #E0E8EB;
+}
+
+.contact-section {
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    text-align: center;
+    background: rgb(254,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(239,241,242,1) 90%, rgba(215,227,232,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,255,1)), color-stop(90%,rgba(239,241,242,1)), color-stop(100%,rgba(215,227,232,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(239,241,242,1) 90%,rgba(215,227,232,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(239,241,242,1) 90%,rgba(215,227,232,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(239,241,242,1) 90%,rgba(215,227,232,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(239,241,242,1) 90%,rgba(215,227,232,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#d7e3e8',GradientType=0 ); /* IE6-9 */
+}
+
+.copyright-section {
+    height: auto;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    background: #333;
+    color: #eee;
+}
+
+@media(max-width:767px) {
+
+    .social img {
+        width: 50px;
+        height: auto;
+        margin: 0 5px 0 5px;
+    }
+        
+    .intro-section,
+    .about-section,
+    .objetive-section,
+    .contact-section {
+        padding-top: 45px;
+        padding-bottom: 0;
+    }
+    
+}
+
 
 /* Sign In ======================================================== */
 
 .form-signin {
-max-width: 330px;
-padding: 15px;
-margin: 0 auto;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .form-signin .checkbox {
-font-weight: normal;
+    font-weight: normal;
 }
 .form-signin .form-control {
-position: relative;
-height: auto;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-padding: 10px;
-font-size: 16px;
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
 }
 .form-signin .form-control:focus {
-z-index: 2;
+    z-index: 2;
 }
 .form-signin input[type="text"] {
-margin-bottom: -1px;
-border-bottom-right-radius: 0;
-border-bottom-left-radius: 0;
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 .form-signin input[type="password"] {
-margin-bottom: 10px;
-border-top-left-radius: 0;
-border-top-right-radius: 0;
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 
