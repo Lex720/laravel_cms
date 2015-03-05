@@ -12,5 +12,9 @@ Parallax Content Slider:
 -parallax-slider
 
 
+Mockup Slider:
+-animate
+
+
 Custom CSS:
 -custom

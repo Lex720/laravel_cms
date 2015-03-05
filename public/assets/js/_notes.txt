@@ -14,6 +14,12 @@ Parallax Content Slider:
 -modernizr.custom_ps
 
 
+Mockup Slider:
+-main
+-classie
+-modernizr.custom_mk
+
+
 Quote Rotator:
 -jquery.cbpQTRotator.min
 -modernizr.custom_qr

@@ -46,10 +46,14 @@
     {{ HTML::style('assets/css/parallax-slider.css') }}
     {{ HTML::script('assets/js/jquery.cslider.js') }}
 
+    <!-- Mockup Slider -->
+    {{ HTML::style('assets/css/animate.css') }}
+
     <!-- Modernizr ¡NO ALTERAR EL ORDEN! -->
     {{ HTML::script('assets/js/modernizr.custom_qr.js') }} <!-- Quotes Rotator  -->
     {{ HTML::script('assets/js/modernizr.custom_he.js') }} <!-- Hover Effects   -->
     {{ HTML::script('assets/js/modernizr.custom_ps.js') }} <!-- Parallax Slider -->
+    {{ HTML::script('assets/js/modernizr.custom_mk.js') }} <!-- Mockup Slider   -->
     
     <!-- Google Map API -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -227,29 +231,112 @@
                 
                     <h1>¡Hola, bienvenido!</h1><br>
             
-                    <p><b>¿Tienes un negocio y piensas en impulsar tus ventas?<br><br>¿Quieres dar a conocer tus servicios?<br><br>¿Piensas crecer en el mercado?</b></p><br>
-            
-                    <h3>¡Te tenemos la soluci&oacute;n!</h3><br>
+                    <p class="visible-xs"> {{ HTML::image('assets/img/logo.png', '', array('class' => 'img-responsive')) }} </p>
+
+                    <br>
                     
-                    <p class="visible-xs"> {{ HTML::image('assets/img/logo.png', '', array('class' => 'img-responsive')) }} </p><br>
+                    <p> <p2><b>Visionary Projects</b></p2> es una compañ&iacute;a <p2>dedicada</p2> a brindarte soluciones de diseño y desarrollo web. Creamos <p2>paginas web dinamicas</p2> hechas a tu medida y necesidades. Estamos completamente comprometidos en ayudarte a <p2>impulsar tu imagen o empresa.</p2></p>
                     
-                    <p> <p2><b>Visionary Projects</b></p2> es una compañ&iacute;a <p2>dedicada</p2> a brindarte soluciones de diseño y desarrollo web. Creamos <p2>paginas web dinamicas</p2> hechas a tu medida y necesidades. Estamos completamente comprometidos en ayudarte a <p2>impulsar tu imagen o empresa.</p2></p><br>
-            
-                    <p>Te ofrecemos novedosos m&eacute;todos publicitarios que ayudar&aacute;n a expandir tu negocio hacia nuevos horizontes aprovechando el sistema de marketing online ya practicado en la actualidad por numerosas compañ&iacute;as en el mundo, &uacute;nete a esta nueva tendencia que crece cada día m&aacute;s.. <p2>No te quedes atr&aacute;s!!<p2></p><br>
-                    
-                    <p>Con nosotros aprovecharas las innovadoras herramientas en el &aacute;mbito tecnológico que ayuden a facilitar los procesos internos de trabajo en tu compañ&iacute;a, para as&iacute; de esta manera <p2>reducir considerablemente el esfuerzo y los costos operativos</p2> mediante la sistematizaci&oacute;n del sistema.</p><br>
-                    
-                    <p>Brindamos ayuda para crear o mejorar tu imagen corporativa, mediante nuestro sistema de diseño lograremos que tu representaci&oacute;n &aacute;fica sea <p2>la m&aacute;s innovadora, profesional y llamativa del mercado.</p2></p><br>
-                    
-                    <p>En Visiopro nos esforzamos en ofrecer lo mejor, las soluciones m&aacute;s ajustadas a las necesidades y conveniencias de nuestros clientes, ofrecemos el mejor asesoramiento para hacer un &oacute;ptimo marketing web a su empresa. <p2><b>Su &Eacute;xito es nuestro &Eacute;xito!</b></p2></p><br>
-                    
-                    <p>Cont&aacute;ctenos Hoy! y vea como nuestros servicios de diseño y desarrollo web lo pueden ayudar a cumplir sus metas.. <p2><b>Lo esperamos!</b></p2></p><br>
+                    <br><br>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="caption">
+                                    <img src="{{ ('assets/img/thumbs/1.jpg') }}" >
+                                    <h3>Historia</h3>
+                                    <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="caption">
+                                    <img src="{{ ('assets/img/thumbs/2.jpg') }}" >
+                                    <h3>Mision</h3>
+                                    <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <div class="caption">
+                                    <img src="{{ ('assets/img/thumbs/3.jpg') }}" >
+                                    <h3>Vision</h3>
+                                    <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
         </div>
     </section>
 
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Top Navigation -->
+            <div id="wrap" class="wrap">
+                <div class="mockup">
+                    <img class="mockup__img" src="{{ ('assets/img/slider/mockup/mockup.jpg') }}" />
+                    <div id="mobile" class="mobile">
+                        <ul id="slideshow" class="slideshow">
+                            <li class="slideshow__item"><img src="{{ ('assets/img/slider/mockup/1.png') }}"/></li>
+                            <li class="slideshow__item"><img src="{{ ('assets/img/slider/mockup/2.png') }}"/></li>
+                            <li class="slideshow__item"><img src="{{ ('assets/img/slider/mockup/3.png') }}"/></li>
+                            <li class="slideshow__item"><img src="{{ ('assets/img/slider/mockup/4.png') }}"/></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            {{ HTML::script('assets/js/classie.js') }}
+            {{ HTML::script('assets/js/main.js') }}
+            <script>
+                (function() {
+                    new Slideshow( document.getElementById( 'slideshow' ) );
+
+                    /* Mockup responsiveness */
+                    var body = docElem = window.document.documentElement,
+                        wrap = document.getElementById( 'wrap' ),
+                        mockup = wrap.querySelector( '.mockup' ),
+                        mockupWidth = mockup.offsetWidth;
+
+                    scaleMockup();
+
+                    function scaleMockup() {
+                        var wrapWidth = wrap.offsetWidth,
+                            val = wrapWidth / mockupWidth;
+
+                        mockup.style.transform = 'scale3d(' + val + ', ' + val + ', 1)';
+                    }
+                    
+                    window.addEventListener( 'resize', resizeHandler );
+
+                    function resizeHandler() {
+                        function delayed() {
+                            resize();
+                            resizeTimeout = null;
+                        }
+                        if ( typeof resizeTimeout != 'undefined' ) {
+                            clearTimeout( resizeTimeout );
+                        }
+                        resizeTimeout = setTimeout( delayed, 50 );
+                    }
+
+                    function resize() {
+                        scaleMockup();
+                    }
+                })();
+            </script>
+
+        </div>
+    </div>
 
     <!-- Services Section -->
     <section id="services" class="services-section">
