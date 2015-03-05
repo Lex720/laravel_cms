@@ -19,6 +19,19 @@
     }
 
     .navbar img {
+        display: block;
+        display: block;
+        width: auto;
+        height: 65px;
+        margin: -20px 0 0 0;
+        padding: 0;
+    }
+
+    .navbar .img2 {
+        display: block;
+    }
+
+    .navbar .img1 {
         display: none;
     }
 
@@ -67,6 +80,14 @@
         height: 65px;
         margin: -20px 0 0 0;
         padding: 0;
+    }
+
+    .top-nav-collapse .img1 {
+        display: block;
+    }
+
+    .top-nav-collapse .img2 {
+        display: none;
     }
 
     .top-nav-collapse li > a {

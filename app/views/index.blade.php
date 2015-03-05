@@ -30,7 +30,14 @@
     <!-- Bootstrap core CSS -->
     {{ HTML::style('assets/css/bootstrap.css') }}
     {{ HTML::style('assets/css/bootstrap.min.css') }}
+
+    <!-- Bootstrap Core JavaScript -->
+    {{ HTML::script('assets/js/bootstrap.min.js') }}
+
+    <!-- Scrolling Nav CSS & JavaScript -->
     {{ HTML::style('assets/css/scrolling-nav.css') }}
+    {{ HTML::script('assets/js/jquery.easing.min.js') }}
+    {{ HTML::script('assets/js/scrolling-nav.js') }}
 
     <!-- Custom styles for this template -->
     {{ HTML::style('assets/css/custom.css') }}
@@ -114,8 +121,11 @@
         <div class="container">
             
             <div class="navbar-header page-scroll">
-                <a class="navbar-brand page-scroll hidden-xs"> {{ HTML::image('assets/img/logo.png') }} </a>
-                <a class="navbar-brand page-scroll visible-xs"> {{ HTML::image('assets/img/logo_text.png') }} </a>
+
+                <div class="navbar-brand page-scroll hidden-xs img1"> {{ HTML::image('assets/img/logo.png') }} </div>
+                <div class="navbar-brand page-scroll hidden-xs img2"> {{ HTML::image('assets/img/logo_black.png') }} </div>
+
+                <div class="navbar-brand page-scroll visible-xs"> {{ HTML::image('assets/img/logo_text.png') }} </div>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -188,7 +198,17 @@
                     
                         $('#da-slider').cslider({
                             autoplay    : true,
-                            bgincrement : 450
+
+                            bgincrement : 100,
+                            // increment the background position 
+                            // (parallax effect) when sliding
+
+                            current     : 0,    
+                            // index of current slide
+                            
+                            interval    : 5000  
+                            // time between transitions
+
                         });
                     
                     });
@@ -529,13 +549,6 @@
         </div>  
     
     </section>
-
-    <!-- Bootstrap Core JavaScript -->
-    {{ HTML::script('assets/js/bootstrap.min.js') }}
-
-    <!-- Scrolling Nav JavaScript -->
-    {{ HTML::script('assets/js/jquery.easing.min.js') }}
-    {{ HTML::script('assets/js/scrolling-nav.js') }}
 
 </body>
 
