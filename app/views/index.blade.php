@@ -41,6 +41,7 @@
 
     <!-- Custom styles for this template -->
     {{ HTML::style('assets/css/custom.css') }}
+    {{ HTML::style('assets/css/addons.css') }}
 
     <!-- Parallax Slider -->
     {{ HTML::style('assets/css/parallax-slider.css') }}
@@ -116,6 +117,11 @@
         <li></li> 
     </ul>
 </div>
+
+<!--
+MAPA
+<div id="map_canvas" class="center-block"></div>
+-->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -229,54 +235,109 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                 
-                    <h1>¡Hola, bienvenido!</h1><br>
+                    <h1>¡Hola, bienvenido!</h1><div class="underlineh1"></div>
+
+                    <br><br>
             
                     <p class="visible-xs"> {{-- HTML::image('assets/img/logo.png', '', array('class' => 'img-responsive')) --}} </p>
-
-                    <br>
                     
                     <p> <p2><b>Visionary Projects</b></p2> es una compañ&iacute;a <p2>dedicada</p2> a brindarte soluciones de diseño y desarrollo web.</p>
                     
-                    <br><br>
+                    <br><br><br>
 
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="thumbs">
-                                <div class="caption">
-                                    <img src="{{ ('assets/img/thumbs/1.png') }}" >
-                                    <h3>Historia</h3>
-                                    <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
-                                </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbs">
+                            <div class="caption">
+                                <img src="{{ ('assets/img/thumbs/1.png') }}" >
+                                <h3>Historia</h3>
+                                <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-sm-6 col-md-4">
-                            <div class="thumbs">
-                                <div class="caption">
-                                    <img src="{{ ('assets/img/thumbs/2.png') }}" >
-                                    <h3>Mision</h3>
-                                    <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
-                                </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbs">
+                            <div class="caption">
+                                <img src="{{ ('assets/img/thumbs/2.png') }}" >
+                                <h3>Mision</h3>
+                                <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
                             </div>
                         </div>
-                        
-                        <div class="col-sm-6 col-md-4">
-                            <div class="thumbs">
-                                <div class="caption">
-                                    <img src="{{ ('assets/img/thumbs/3.png') }}" >
-                                    <h3>Vision</h3>
-                                    <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
-                                </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbs">
+                            <div class="caption">
+                                <img src="{{ ('assets/img/thumbs/3.png') }}" >
+                                <h3>Vision</h3>
+                                <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
                             </div>
                         </div>
                     </div>
                     
                 </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12">
+
+                    <div id="cbp-qtrotator" class="cbp-qtrotator">
+                    
+                        <div class="cbp-qtcontent">
+                            <img src="{{ ('assets/img/thumbs/1.png') }}" />
+                            <blockquote>
+                                <footer>Albert Einstein</footer>
+                                <p>Nothing will benefit human health and increase the chances for survival of life on Earth.</p>
+                            </blockquote>
+                        </div>
+                        
+                        <div class="cbp-qtcontent">
+                            <img src="{{ ('assets/img/thumbs/2.png') }}" />
+                            <blockquote>
+                                <footer>Pino Caruso</footer>
+                                <p>People eat meat and think they will become as strong as an ox, forgetting that the ox eats grass.</p>
+                            </blockquote>
+                        </div>
+                        
+                        <div class="cbp-qtcontent">
+                            <img src="{{ ('assets/img/thumbs/3.png') }}" />
+                            <blockquote>
+                                <footer>Moby</footer>
+                                <p>If you don't want to be beaten then you shouldn't condone such behaviour towards anyone.</p>
+                            </blockquote>
+                        </div>
+                        
+                    </div>
+
+                    {{ HTML::script('assets/js/jquery.cbpQTRotator.min.js') }}
+                    <script>
+                        $( function() {
+                            /*
+                            - how to call the plugin:
+                            $( selector ).cbpQTRotator( [options] );
+                            - options:
+                            {
+                                // default transition speed (ms)
+                                speed : 700,
+                                // default transition easing
+                                easing : 'ease',
+                                // rotator interval (ms)
+                                interval : 8000
+                            }
+                            - destroy:
+                            $( selector ).cbpQTRotator( 'destroy' );
+                            */
+
+                            $( '#cbp-qtrotator' ).cbpQTRotator();
+
+                        } );
+                    </script>
+                </div>
+
             </div>
         </div>
     </section>
 
 
+    <!-- Separador -->
     <div class="container-fluid">
         <div class="row">
 
@@ -289,7 +350,6 @@
                             <li class="slideshow__item"><img src="{{ ('assets/img/slider/mockup/1.png') }}"/></li>
                             <li class="slideshow__item"><img src="{{ ('assets/img/slider/mockup/2.png') }}"/></li>
                             <li class="slideshow__item"><img src="{{ ('assets/img/slider/mockup/3.png') }}"/></li>
-                            <li class="slideshow__item"><img src="{{ ('assets/img/slider/mockup/4.png') }}"/></li>
                         </ul>
                     </div>
                 </div>
@@ -338,96 +398,105 @@
         </div>
     </div>
 
-    <!-- Services Section -->
+
+     <!-- Services Section -->
     <section id="services" class="services-section">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                 
-                    <h1>Nuestros servicios</h1><br><br>
+                    <h1>Nuestros servicios</h1><div class="underlineh1"></div>
 
-                    <p>Estos son los servicios que ofrecemos para ayudar a que tu empresa crezca y se expanda en su ambito comercial.<br><br>Click en la imagen para ver detalles.</p>
-            
-                    <div class="row">
+                    <br><br>
 
-                        <ul class="grid cs-style-6">
-                            
-                            <li>
-                                <figure>
-                                    <img src="{{ ('assets/img/grid/1.png') }}" >
-                                    <figcaption>
-                                        <h3>Camera</h3>
-                                        <span>Jacob Cummings</span>
-                                        <a class="page-scroll" href="#contact">Pedir servicio</a>
-                                    </figcaption>
-                                </figure>
-                            </li>
-
-                            <li>
-                                <figure>
-                                    <img src="{{ ('assets/img/grid/2.png') }}" >
-                                    <figcaption>
-                                        <h3>Phone</h3>
-                                        <span>Jacob Cummings</span>
-                                        <a class="page-scroll" href="#contact">Pedir servicio</a>
-                                    </figcaption>
-                                </figure>
-                            </li>
-
-                            <li>
-                                <figure>
-                                    <img src="{{ ('assets/img/grid/3.png') }}" alt="img04">
-                                    <figcaption>
-                                        <h3>Settings</h3>
-                                        <span>Jacob Cummings</span>
-                                        <a class="page-scroll" href="#contact">Pedir servicio</a>
-                                    </figcaption>
-                                </figure>
-                            </li>
-
-                            <li>
-                                <figure>
-                                    <img src="{{ ('assets/img/grid/4.png') }}" >
-                                    <figcaption>
-                                        <h3>Camera</h3>
-                                        <span>Jacob Cummings</span>
-                                        <a class="page-scroll" href="#contact">Pedir servicio</a>
-                                    </figcaption>
-                                </figure>
-                            </li>
-
-                            <li>
-                                <figure>
-                                    <img src="{{ ('assets/img/grid/5.png') }}" >
-                                    <figcaption>
-                                        <h3>Phone</h3>
-                                        <span>Jacob Cummings</span>
-                                        <a class="page-scroll" href="#contact">Pedir servicio</a>
-                                    </figcaption>
-                                </figure>
-                            </li>
-
-                            <li>
-                                <figure>
-                                    <img src="{{ ('assets/img/grid/6.png') }}" alt="img04">
-                                    <figcaption>
-                                        <h3>Settings</h3>
-                                        <span>Jacob Cummings</span>
-                                        <a class="page-scroll" href="#contact">Pedir servicio</a>
-                                    </figcaption>
-                                </figure>
-                            </li>   
-                            
-                        </ul>
-
-                        {{ HTML::script('assets/js/toucheffects.js') }}
-
-                    </div>
+                    <p>Estos son los servicios que ofrecemos para ayudar a que tu empresa crezca y se expanda en su ambito comercial. <p2>Detalles</p2.></p>
                     
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!-- Separador -->
+    <div class="container-fluid">
+        <div class="row">
+            {{ HTML::image('assets/img/divisor1.jpg', '', array('class' => 'img-responsive')) }}
+        </div>
+    </div>
+
+
+    <!-- Details Section -->
+    <section id="details" class="details-section">
+        <div class="container-fluid">
+            <div class="row">
+                
+                <h1>Desarrollo Web</h1><div class="underlineh1"></div>
+
+                <br><br>
+
+                <p>Le ofrecemos desarrollos front and back end de <p2>ultima generacion</p2>.</p>
+
+                <ul class="grid cs-style-6">
+                    
+                    <li>
+                        <figure>
+                            <img src="{{ ('assets/img/grid/1.png') }}" >
+                            <figcaption>
+                                <h3>Paginas</h3>
+                                <span>Sitios con las ultimas tendencias de diseño y desarrollo web.</span>
+                                <a class="page-scroll" href="#contact">Pedir servicio</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure>
+                            <img src="{{ ('assets/img/grid/4.png') }}" >
+                            <figcaption>
+                                <h3>Responsive</h3>
+                                <span>Aplicaciones echas a la medida de cualquier dispositivo movil.</span>
+                                <a class="page-scroll" href="#contact">Pedir servicio</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure>
+                            <img src="{{ ('assets/img/grid/2.png') }}" >
+                            <figcaption>
+                                <h3>Empresarial</h3>
+                                <span>Desarrollamos sistemas para tu empresa a la medida de tus necesidades.</span>
+                                <a class="page-scroll" href="#contact">Pedir servicio</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure>
+                            <img src="{{ ('assets/img/grid/3.png') }}" >
+                            <figcaption>
+                                <h3>eCommerce</h3>
+                                <span>Sitios de venta virtual para que tu negocio siga creciendo.</span>
+                                <a class="page-scroll" href="#contact">Pedir servicio</a>
+                            </figcaption>
+                        </figure>
+                    </li>    
+                    
+                </ul>
+
+                {{ HTML::script('assets/js/toucheffects.js') }}
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Separador -->
+    <div class="container-fluid">
+        <div class="row">
+            {{ HTML::image('assets/img/divisor2.jpg', '', array('class' => 'img-responsive')) }}
+        </div>
+    </div>
 
 
     <!-- Separador esquina doblada -->
@@ -540,7 +609,7 @@
         
             <br><br><br>
 
-            <div class="row">
+            <!--<div class="row">
                 
                 <div class="col-xs-12 col-sm-12 col-md-12">
 
@@ -604,12 +673,9 @@
                         } );
                     </script>
 
-                    <!-- MAPA -->
-                    <!--<div id="map_canvas" class="center-block"></div>-->
-
                 </div>
 
-            </div>
+            </div>-->
         
         </div>
 
