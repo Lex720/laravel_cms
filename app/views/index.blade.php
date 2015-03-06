@@ -241,9 +241,9 @@
 
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
-                            <div class="thumbnail">
+                            <div class="thumbs">
                                 <div class="caption">
-                                    <img src="{{ ('assets/img/thumbs/1.jpg') }}" >
+                                    <img src="{{ ('assets/img/thumbs/1.png') }}" >
                                     <h3>Historia</h3>
                                     <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
                                 </div>
@@ -251,9 +251,9 @@
                         </div>
 
                         <div class="col-sm-6 col-md-4">
-                            <div class="thumbnail">
+                            <div class="thumbs">
                                 <div class="caption">
-                                    <img src="{{ ('assets/img/thumbs/2.jpg') }}" >
+                                    <img src="{{ ('assets/img/thumbs/2.png') }}" >
                                     <h3>Mision</h3>
                                     <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
                                 </div>
@@ -261,9 +261,9 @@
                         </div>
                         
                         <div class="col-sm-6 col-md-4">
-                            <div class="thumbnail">
+                            <div class="thumbs">
                                 <div class="caption">
-                                    <img src="{{ ('assets/img/thumbs/3.jpg') }}" >
+                                    <img src="{{ ('assets/img/thumbs/3.png') }}" >
                                     <h3>Vision</h3>
                                     <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
                                 </div>
