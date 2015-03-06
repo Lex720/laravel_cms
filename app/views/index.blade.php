@@ -231,11 +231,11 @@
                 
                     <h1>¡Hola, bienvenido!</h1><br>
             
-                    <p class="visible-xs"> {{ HTML::image('assets/img/logo.png', '', array('class' => 'img-responsive')) }} </p>
+                    <p class="visible-xs"> {{-- HTML::image('assets/img/logo.png', '', array('class' => 'img-responsive')) --}} </p>
 
                     <br>
                     
-                    <p> <p2><b>Visionary Projects</b></p2> es una compañ&iacute;a <p2>dedicada</p2> a brindarte soluciones de diseño y desarrollo web. Creamos <p2>paginas web dinamicas</p2> hechas a tu medida y necesidades. Estamos completamente comprometidos en ayudarte a <p2>impulsar tu imagen o empresa.</p2></p>
+                    <p> <p2><b>Visionary Projects</b></p2> es una compañ&iacute;a <p2>dedicada</p2> a brindarte soluciones de diseño y desarrollo web.</p>
                     
                     <br><br>
 

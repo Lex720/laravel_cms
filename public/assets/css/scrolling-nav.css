@@ -94,7 +94,7 @@
         font-family: 'Economica', sans-serif;
         font-weight: 400;
         letter-spacing: 1px;
-        color: #428BCA;
+        color: #25B7D3;
         font-size: 1.5em;
         text-shadow: 0 0 1px rgba(255,255,255,0.3);
         background: none;
@@ -103,13 +103,13 @@
     }
 
     .top-nav-collapse li > a:hover {
-        color: #428BCA;
+        color: #1D93A7;
     }
 
     .top-nav-collapse .navbar-nav > .active > a,
     .top-nav-collapse .navbar-nav > .active > a:hover,
     .top-nav-collapse .navbar-nav > .active > a:focus {
-      color: #428BCA;
+      color: #1D93A7;
       outline: 0;
     }
 
