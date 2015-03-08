@@ -51,10 +51,11 @@
     {{ HTML::style('assets/css/animate.css') }}
 
     <!-- Modernizr ¡NO ALTERAR EL ORDEN! -->
-    {{ HTML::script('assets/js/modernizr.custom_qr.js') }} <!-- Quotes Rotator  -->
-    {{ HTML::script('assets/js/modernizr.custom_he.js') }} <!-- Hover Effects   -->
     {{ HTML::script('assets/js/modernizr.custom_ps.js') }} <!-- Parallax Slider -->
+    {{ HTML::script('assets/js/modernizr.custom_he.js') }} <!-- Hover Effects   -->
     {{ HTML::script('assets/js/modernizr.custom_mk.js') }} <!-- Mockup Slider   -->
+    
+    <!-- {{ HTML::script('assets/js/modernizr.custom_qr.js') }}  Quotes Rotator  -->
     
     <!-- Google Map API -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -277,7 +278,7 @@ MAPA
                     
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <!--<div class="col-xs-12 col-sm-12 col-md-12">
 
                     <div id="cbp-qtrotator" class="cbp-qtrotator">
                     
@@ -330,7 +331,7 @@ MAPA
 
                         } );
                     </script>
-                </div>
+                </div>-->
 
             </div>
         </div>
@@ -347,9 +348,9 @@ MAPA
                     <img class="mockup__img" src="{{ ('assets/img/slider/mockup/mockup.jpg') }}" />
                     <div id="mobile" class="mobile">
                         <ul id="slideshow" class="slideshow">
-                            <li class="slideshow__item"><img src="{{ ('assets/img/slider/mockup/1.png') }}"/></li>
-                            <li class="slideshow__item"><img src="{{ ('assets/img/slider/mockup/2.png') }}"/></li>
-                            <li class="slideshow__item"><img src="{{ ('assets/img/slider/mockup/3.png') }}"/></li>
+                            <li class="slideshow__item"><img src="{{ ('assets/img/slider/mockup/1.jpg') }}"/></li>
+                            <li class="slideshow__item"><img src="{{ ('assets/img/slider/mockup/2.jpg') }}"/></li>
+                            <li class="slideshow__item"><img src="{{ ('assets/img/slider/mockup/3.jpg') }}"/></li>
                         </ul>
                     </div>
                 </div>
@@ -608,74 +609,6 @@ MAPA
             </div>
         
             <br><br><br>
-
-            <!--<div class="row">
-                
-                <div class="col-xs-12 col-sm-12 col-md-12">
-
-                    <div id="cbp-qtrotator" class="cbp-qtrotator">
-            
-                        <div class="cbp-qtcontent">
-                            <img src="{{ ('assets/img/quotes/1.jpg') }}" />
-                            <blockquote>
-                              <p>People eat meat and think they will become as strong as an ox, forgetting that the ox eats grass.</p>
-                              <footer>Pino Caruso</footer>
-                            </blockquote>
-                        </div>
-                        
-                        <div class="cbp-qtcontent">
-                            <img src="{{ ('assets/img/quotes/2.jpg') }}" />
-                            <blockquote>
-                              <p>Nothing will benefit human health and increase the chances for survival of life on Earth.</p>
-                              <footer>Albert Einstein</footer>
-                            </blockquote>
-                        </div>
-                        
-                        <div class="cbp-qtcontent">
-                            <img src="{{ ('assets/img/quotes/3.jpg') }}" />
-                            <blockquote>
-                              <p>If you don't want to be beaten then you shouldn't condone such behaviour towards anyone.</p>
-                              <footer>Moby</footer>
-                            </blockquote>
-                        </div>
-                        
-                        <div class="cbp-qtcontent">
-                            <img src="{{ ('assets/img/quotes/4.jpg') }}" />
-                            <blockquote>
-                              <p>My body will not be a tomb for other creatures.</p>
-                              <footer>Leonardo Da Vinci</footer>
-                            </blockquote>
-                        </div>
-                        
-                    </div>
-
-                    {{ HTML::script('assets/js/jquery.cbpQTRotator.min.js') }}
-                    <script>
-                        $( function() {
-                            /*
-                            - how to call the plugin:
-                            $( selector ).cbpQTRotator( [options] );
-                            - options:
-                            {
-                                // default transition speed (ms)
-                                speed : 700,
-                                // default transition easing
-                                easing : 'ease',
-                                // rotator interval (ms)
-                                interval : 8000
-                            }
-                            - destroy:
-                            $( selector ).cbpQTRotator( 'destroy' );
-                            */
-
-                            $( '#cbp-qtrotator' ).cbpQTRotator();
-
-                        } );
-                    </script>
-
-                </div>
-
-            </div>-->
         
         </div>
 
