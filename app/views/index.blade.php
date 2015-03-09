@@ -250,7 +250,7 @@ MAPA
                         <div class="thumbs">
                             <div class="caption">
                                 <img src="{{ ('assets/img/thumbs/1.png') }}" >
-                                <h3>Historia</h3>
+                                <h3>Excelente atencion</h3>
                                 <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
                             </div>
                         </div>
@@ -260,7 +260,7 @@ MAPA
                         <div class="thumbs">
                             <div class="caption">
                                 <img src="{{ ('assets/img/thumbs/2.png') }}" >
-                                <h3>Mision</h3>
+                                <h3>Paginas originales</h3>
                                 <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
                             </div>
                         </div>
@@ -270,7 +270,7 @@ MAPA
                         <div class="thumbs">
                             <div class="caption">
                                 <img src="{{ ('assets/img/thumbs/3.png') }}" >
-                                <h3>Vision</h3>
+                                <h3>Crecimiento empresarial</h3>
                                 <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
                             </div>
                         </div>

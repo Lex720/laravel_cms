@@ -515,7 +515,7 @@
 .mockup::after {
     content: '';
     position: absolute;
-    background: rgba(51,71,89,0.3);
+    background: rgba(51,71,89,0.2);
     top: 0;
     left: 0;
     width: 100%;
@@ -572,6 +572,9 @@
 
 .slideshow img {
     width: 100%;
+    filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
 }
 
 .slideshow__item.in--next {
