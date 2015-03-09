@@ -64,7 +64,10 @@
         $(window).load(function() {
             if ($(window).width() < 768) {
                 $(".navbar").addClass("navbar-default");
-            }   
+            }
+            else {
+                $(".navbar").removeClass("navbar-default");
+            }
         });
         //Resize Class Script
         $(window).resize(function() {

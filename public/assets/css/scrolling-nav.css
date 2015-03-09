@@ -154,17 +154,36 @@
 	
 }
 
+@media(max-width:991px) {
+
+    .top-nav-collapse img {
+        height: 55px;
+    }
+}
+
+@media(max-width:784px) {
+
+    .top-nav-collapse .navbar-nav > .active > a,
+    .top-nav-collapse .navbar-nav > .active > a:hover,
+    .top-nav-collapse .navbar-nav > .active > a:focus {
+      color: #1D93A7;
+      outline: 0;
+      background: none;
+
+}
+
 @media(max-width:767px) {
 
 	.navbar {
+        z-index: 3000;
 		padding: 10px 0 10px 0;
 		background: #eee;
 		}
 
 	.navbar img {
 		width: auto;
-		height: 28px;
-		margin: 0px 0 0 0;
+		height: 32px;
+		margin: 0;
 		padding: 0;
 		}
 

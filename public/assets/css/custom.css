@@ -39,6 +39,8 @@ a:hover {
 }
 
 h1 {
+    font-size: 3.5em;
+    font-weight: 300;
     color: #428BCA;   
 }
 
@@ -48,9 +50,20 @@ h1 {
     margin: 0 2px 0 2px;
 }
 
-#map_canvas {
-    width: 100%;
-    height: 300px;
+.underlineh1 {
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 2%;
+    border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width: 480px) {
+
+    .underlineh1 {
+        width: 250px;
+    }
+
 }
 
 
@@ -60,14 +73,6 @@ h1 {
     height: auto;
     text-align: center;
     background: none;
-}
-
-.underlineh1 {
-    width: 350px;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 2%;
-    border-bottom: 1px solid #000;
 }
 
 
@@ -89,9 +94,7 @@ h1 {
 }
 
 .about-section h1 {
-    font-size: 4em;
     color: #333;
-    font-weight: 300;
 }
 
 .about-section .underlineh1 {
@@ -110,6 +113,7 @@ h1 {
 
 .thumbs {
   display: block;
+  margin-bottom: 30px;
   padding: 30px;
   background-color: none;
   border: 1px solid #ddd;
@@ -143,9 +147,7 @@ h1 {
 }
 
 .services-section h1 {
-    font-size: 4em;
     color: #333;
-    font-weight: 300;
 }
 
 .services-section .underlineh1 {
@@ -174,9 +176,7 @@ h1 {
 }
 
 .details-section h1 {
-    font-size: 4em;
     color: #333;
-    font-weight: 300;
 }
 
 .details-section .underlineh1 {
