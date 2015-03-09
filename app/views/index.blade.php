@@ -50,40 +50,10 @@
     <!-- Mockup Slider -->
     {{ HTML::style('assets/css/animate.css') }}
 
-    <!-- Modernizr ¡NO ALTERAR EL ORDEN! -->
-    {{ HTML::script('assets/js/modernizr.custom_ps.js') }} <!-- Parallax Slider -->
-    {{ HTML::script('assets/js/modernizr.custom_he.js') }} <!-- Hover Effects   -->
-    {{ HTML::script('assets/js/modernizr.custom_mk.js') }} <!-- Mockup Slider   -->
-    
-    <!-- {{ HTML::script('assets/js/modernizr.custom_qr.js') }}  Quotes Rotator  -->
-    
-    <!-- Google Map API -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map_canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(9.448930, -64.463117),
-          zoom: 15,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-    
-      var image = '_marker.png';
-    
-      var myLatLng = new google.maps.LatLng(9.449930, -64.463117);
-    
-      var marker = new google.maps.Marker({
-        position: myLatLng
-          , map: map
-          /*, icon: image*/
-          , cursor: 'default'
-          , draggable: false
-          });
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+    <!-- Modernizr Custom -->
+    {{ HTML::script('assets/js/modernizr.custom.js') }}
 
+    
     <!-- Loader Script -->
     <script type="text/javascript"> $(window).load(function() {$(".loader").fadeOut("slow");})</script>
 
@@ -118,11 +88,6 @@
         <li></li> 
     </ul>
 </div>
-
-<!--
-MAPA
-<div id="map_canvas" class="center-block"></div>
--->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 

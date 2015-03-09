@@ -11,20 +11,20 @@ Bootstrap NavBar:
 
 Parallax Content Slider:
 -jquery.cslider
--modernizr.custom_ps
 
 
 Mockup Slider:
 -main
 -classie
--modernizr.custom_mk
 
 
 Quote Rotator:
 -jquery.cbpQTRotator.min
--modernizr.custom_qr
 
 
 Hover Effects:
 -toucheffects
---modernizr.custom_he
+
+
+Modernizr Custom
+-modernizr.custom
