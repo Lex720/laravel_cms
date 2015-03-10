@@ -151,7 +151,7 @@ h1 {
 }
 
 .services-section .underlineh1 {
-    border-bottom: 3px solid #25B7D3;
+    border-bottom: 3px solid #32BEA6;
 }
 
 .services-section p {
@@ -161,7 +161,7 @@ h1 {
 }
 
 .services-section p p2 {
-    color: #25B7D3;
+    color: #32BEA6;
 }
 
 
@@ -180,7 +180,7 @@ h1 {
 }
 
 .details-section .underlineh1 {
-    border-bottom: 3px solid #25B7D3;
+    border-bottom: 3px solid #E04660;
 }
 
 .details-section p {
@@ -190,7 +190,7 @@ h1 {
 }
 
 .details-section p p2 {
-    color: #25B7D3;
+    color: #E04660;
 }
 
 
@@ -199,11 +199,52 @@ h1 {
 .contact-section {
     height: auto;
     padding-top: 100px;
-    padding-bottom: 50px;
     text-align: center;
     background: #fff;
 }
 
+.contact-section h1 {
+    color: #333;
+}
+
+.contact-section .underlineh1 {
+    border-bottom: 3px solid #FABC3D;
+}
+
+.contact-section a {
+    color: #CB8A03;
+}
+
+.contact-section a:hover {
+    color: #FAAA05;
+}
+
+.contact-section button {
+    color: #777;
+    background: #ddd;
+}
+
+.contact-section button:hover {
+    color: #fff;
+    background: #FAAA05;
+}
+
+
+/* SOCIAL ======================================================== */
+
+.social-section {
+    height: auto;
+    margin: 0;
+    padding: 25px 0;
+    background: #FAAA05;
+}
+
+.social-section a {
+    margin: 15px 30px;
+    color: #fff;
+    outline: 0;
+    text-decoration: none;
+}
 
 /* COPYRIGHT ======================================================== */
 
@@ -215,6 +256,9 @@ h1 {
     color: #eee;
 }
 
+
+/* MEDIA QUERIES ======================================================== */
+
 @media(max-width:767px) {
 
     .social img {
@@ -225,7 +269,8 @@ h1 {
         
     .intro-section,
     .about-section,
-    .objetive-section,
+    .services-section,
+    .details-section,
     .contact-section {
         padding-top: 45px;
         padding-bottom: 0;

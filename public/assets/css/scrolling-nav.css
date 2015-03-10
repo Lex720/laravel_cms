@@ -54,8 +54,8 @@
     .navbar-nav > .active > a,
     .navbar-nav > .active > a:hover,
     .navbar-nav > .active > a:focus {
-      background: none;
-      outline: 0;
+        background: none;
+        outline: 0;
     }
 
     .top-nav-collapse {
@@ -109,8 +109,8 @@
     .top-nav-collapse .navbar-nav > .active > a,
     .top-nav-collapse .navbar-nav > .active > a:hover,
     .top-nav-collapse .navbar-nav > .active > a:focus {
-      color: #1D93A7;
-      outline: 0;
+        color: #1D93A7;
+        outline: 0;
     }
 
     /* Effect 12: circle */
@@ -166,9 +166,9 @@
     .top-nav-collapse .navbar-nav > .active > a,
     .top-nav-collapse .navbar-nav > .active > a:hover,
     .top-nav-collapse .navbar-nav > .active > a:focus {
-      color: #1D93A7;
-      outline: 0;
-      background: none;
+        color: #1D93A7;
+        outline: 0;
+        background: none;
 
 }
 
@@ -179,6 +179,14 @@
 		padding: 10px 0 10px 0;
 		background: #eee;
 		}
+
+    .navbar li > a {
+        font-family: 'Economica', sans-serif;
+        letter-spacing: 1px;
+        color: #25B7D3;
+        font-size: 1.3em;
+        background: none;
+    }
 
 	.navbar img {
 		width: auto;

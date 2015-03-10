@@ -468,14 +468,16 @@
     </div>
 
 
-    <!-- Separador esquina doblada -->
-    <div class="separador ss-style-foldedcorner">
+    <!-- Separador esquina doblada 
+    <div class="separador ss-style-foldedcorner"> -->
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
     
         <div class="container">
         
-            <h1>Contactanos</h1>
+            <h1>Contactanos</h1><div class="underlineh1"></div>
+
+            <br><br>
         
             <p>Comunícate con nosotros hoy mismo para recibir la mejor asesoría, descubre todo lo que podemos hacer por ti.</p>
         
@@ -483,13 +485,13 @@
             
             <div class="row text-justify">
                 
-                <div class="col-xs-12 col-sm-6 col-md-5">
+                <div class="col-xs-12 col-sm-6 col-md-6">
                 
-                  <h3>Formulario de contacto</h3>
+                    <h3>Formulario de contacto</h3>
                     
                     <br>
                 
-                  <form class="form-horizontal" role="form">
+                    <form class="form-horizontal" role="form">
                     
                         <div class="form-group">
                             <label for="nombre" class="col-sm-2 control-label">Nombre</label>
@@ -513,28 +515,28 @@
                         </div>
                         
                         <div class="form-group">
-                          <label for="mensaje" class="col-sm-2 control-label">Mensaje</label>
-                          <div class="col-sm-10">
-                              <textarea class="form-control" rows="3" placeholder="Mensaje" required></textarea>
+                            <label for="mensaje" class="col-sm-2 control-label">Mensaje</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="3" placeholder="Mensaje" required></textarea>
                             </div>
                         </div>
 
                         <div class="form-group">
-                          <div class="col-sm-offset-2 col-sm-8">
-                            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-                            <button type="reset" class="btn btn-success">Limpiar</button>
-                          </div>
+                            <div class="col-sm-offset-2 col-sm-8">
+                                <button type="submit" class="btn">Enviar mensaje</button>
+                                <button type="reset" class="btn">Limpiar</button>
+                            </div>
                         </div>
                         
                     </form>
                 
                 </div>
                 
-                <div class="col-xs-0 col-sm-0 col-md-1"></div>
+                <div class="col-xs-0 col-sm-1 col-md-1"></div>
                 
-                <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="col-xs-12 col-sm-5 col-md-5">
                 
-                  <h3>Datos de contacto</h3>
+                    <h3>Datos de contacto</h3>
                     
                     <br>
                     
@@ -556,24 +558,6 @@
                     
                 </div>
                 
-                <div class="col-xs-0 col-sm-0 col-md-1"></div>
-                
-                <div class="col-xs-12 col-sm-2 col-md-2">
-                
-                  <h3>Siguenos:</h3>
-                    
-                    <br><br>
-                    
-                    <div class="social">
-
-                        <a href="https://www.facebook.com/visionaryprojects"> {{ HTML::image('assets/img/social/s-fb.png') }} </a>
-                        <a href="https://twitter.com/visiopro_social"> {{ HTML::image('assets/img/social/s-tw.png') }} </a>
-                        <a href="http://instagram.com/visiopro_social"> {{ HTML::image('assets/img/social/s-ig.png') }} </a>
-
-                     </div>
-                
-                </div>
-                
             </div>
         
             <br><br><br>
@@ -581,22 +565,40 @@
         </div>
 
     </section>
-    <!-- Separador -->
-    </div>
+    <!-- Separador 
+    </div>-->
 
+    <!-- Social Section -->
+    <section id="contact" class="social-section">
+    
+        <div class="container-fluid">
+        
+            <div class="row">
+            
+                <div class="hi-icon-wrap hi-icon-effect-8">
+                    <a href="https://www.facebook.com/visionaryprojects" target="_blank" class="hi-icon hi-icon-fb">Facebook</a>
+                    <a href="http://instagram.com/visiopro_social" target="_blank" class="hi-icon hi-icon-ig">Instagram</a>
+                    <a href="https://twitter.com/visiopro_social" target="_blank" class="hi-icon hi-icon-tw">Twitter</a>
+                </div>
+            
+            </div>
+            
+        </div>  
+    
+    </section>
     
     <!-- Copyright Section -->
     <section id="contact" class="copyright-section">
     
-      <div class="container">
+        <div class="container">
         
-        <div class="row">
+            <div class="row">
             
-              <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="col-xs-12 col-sm-12 col-md-12">
             
-                COPYRIGHT © 2014 Visionary Projects, C.A. Todo los derechos reservados.
+                    COPYRIGHT © 2014 Visionary Projects, C.A. Todo los derechos reservados.
                     
-              </div>
+                </div>
             
             </div>
             
