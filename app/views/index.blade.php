@@ -503,7 +503,7 @@
                         <div class="form-group">
                             <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
                             <div class="col-sm-10">
-                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
                             </div>
                         </div>
                         
@@ -590,15 +590,11 @@
     <!-- Copyright Section -->
     <section id="contact" class="copyright-section">
     
-        <div class="container">
+        <div class="container-fluid">
         
             <div class="row">
             
-                <div class="col-xs-12 col-sm-12 col-md-12">
-            
-                    COPYRIGHT © 2014 Visionary Projects, C.A. Todo los derechos reservados.
-                    
-                </div>
+                COPYRIGHT © 2014 Visionary Projects, C.A. Todo los derechos reservados.    
             
             </div>
             
