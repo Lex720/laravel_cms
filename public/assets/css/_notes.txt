@@ -2,6 +2,9 @@ Bootstrap generals:
 -bootstrap
 -bootstrap.min
 -bootstrap.css.map
+-bootstrap-theme
+-bootstrap-theme.css
+-bootstrap-theme.min
 
 
 Bootstrap NavBar:

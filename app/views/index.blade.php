@@ -101,10 +101,10 @@
                 
                 <div class="navbar-header page-scroll">
 
-                    <div class="navbar-brand page-scroll hidden-xs img1"> {{ HTML::image('assets/img/logo.png') }} </div>
-                    <div class="navbar-brand page-scroll hidden-xs img2"> {{ HTML::image('assets/img/logo_black.png') }} </div>
+                    <div class="navbar-brand page-scroll hidden-xs img1"> {{ HTML::image('assets/img/logos/logo.png') }} </div>
+                    <div class="navbar-brand page-scroll hidden-xs img2"> {{ HTML::image('assets/img/logos/logo_black.png') }} </div>
 
-                    <div class="navbar-brand page-scroll visible-xs"> {{ HTML::image('assets/img/logo_text.png') }} </div>
+                    <div class="navbar-brand page-scroll visible-xs"> {{ HTML::image('assets/img/logos/logo_text.png') }} </div>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -408,9 +408,15 @@
 
 
         <!-- Separador -->
-        <div class="container-fluid">
+        <div class="container-fluid hidden-xs">
             <div class="row">
-                {{ HTML::image('assets/img/divisor1.jpg', '', array('class' => 'img-responsive')) }}
+                {{ HTML::image('assets/img/dividers/divider1.jpg', '', array('class' => 'img-responsive')) }}
+            </div>
+        </div>
+        <!-- Separador mobile -->
+        <div class="container-fluid visible-xs">
+            <div class="row">
+                {{ HTML::image('assets/img/dividers/divider1a.jpg', '', array('class' => 'img-responsive')) }}
             </div>
         </div>
 
@@ -482,9 +488,15 @@
 
 
         <!-- Separador -->
-        <div class="container-fluid">
+        <div class="container-fluid hidden-xs">
             <div class="row">
-                {{ HTML::image('assets/img/divisor2.jpg', '', array('class' => 'img-responsive')) }}
+                {{ HTML::image('assets/img/dividers/divider2.jpg', '', array('class' => 'img-responsive')) }}
+            </div>
+        </div>
+        <!-- Separador mobile -->
+        <div class="container-fluid visible-xs">
+            <div class="row">
+                {{ HTML::image('assets/img/dividers/divider2a.jpg', '', array('class' => 'img-responsive')) }}
             </div>
         </div>
 
