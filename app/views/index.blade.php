@@ -343,11 +343,11 @@
                                 </svg>
                             </div>
                             <figcaption>
-                                <h2>Lorem Ipsum Stuff</h2>
-                                <p>SVGs by <a href="http://dribbble.com/emanuellikesdesign">Emanuel Serbanoiu</a>, Illustrations by <a href="http://www.pixeden.com/">Pixeden</a><br>Fo shizzle mammasay mammasa mamma oo sa fo shizzle shizzle my nizzle crocodizzle things. Shizzle my nizzle crocodizzle quis arcu. Maecenizzle uhuh ... yih!</p>
+                                <h2>Desarrollo Web</h2>
+                                <p>Fo shizzle mammasay mammasa mamma oo sa fo shizzle shizzle my nizzle crocodizzle things. Shizzle my nizzle crocodizzle quis arcu. Maecenizzle uhuh ... yih!</p>
                             </figcaption>
                         </figure>
-
+                        <br><br><br>
                         <figure>
                             <div class="drawings ipad">
                                 <img class="svgillustration" src="{{ ('assets/img/svganimation/2.png') }}" alt="iPad Illustration" />
@@ -366,11 +366,11 @@
                                 </svg>
                             </div>
                             <figcaption>
-                                <h2>Lorem Ipsum Stuff</h2>
-                                <p>SVGs by <a href="http://dribbble.com/emanuellikesdesign">Emanuel Serbanoiu</a>, Illustrations by <a href="http://www.pixeden.com/">Pixeden</a><br>Fo shizzle mammasay mammasa mamma oo sa fo shizzle shizzle my nizzle crocodizzle things. Shizzle my nizzle crocodizzle quis arcu. Maecenizzle uhuh ... yih!</p>
+                                <h2>Diseño grafico e imagen corporativa</h2>
+                                <p>Fo shizzle mammasay mammasa mamma oo sa fo shizzle shizzle my nizzle crocodizzle things. Shizzle my nizzle crocodizzle quis arcu. Maecenizzle uhuh ... yih!</p>
                             </figcaption>
                         </figure>
-
+                        <br><br><br>
                         <figure>
                             <div class="drawings iphone">
                                 <img class="svgillustration" src="{{ ('assets/img/svganimation/3.png') }}" alt="iPhone Illustration" />
@@ -394,8 +394,8 @@
                                 </svg>
                             </div>
                             <figcaption>
-                                <h2>Lorem Ipsum Stuff</h2>
-                                <p>SVGs by <a href="http://dribbble.com/emanuellikesdesign">Emanuel Serbanoiu</a>, Illustrations by <a href="http://www.pixeden.com/">Pixeden</a><br>Fo shizzle mammasay mammasa mamma oo sa fo shizzle shizzle my nizzle crocodizzle things. Shizzle my nizzle crocodizzle quis arcu. Maecenizzle uhuh ... yih!</p>
+                                <h2>Marketing Digital</h2>
+                                <p>Fo shizzle mammasay mammasa mamma oo sa fo shizzle shizzle my nizzle crocodizzle things. Shizzle my nizzle crocodizzle quis arcu. Maecenizzle uhuh ... yih!</p>
                             </figcaption>
                         </figure>
                     </div>
