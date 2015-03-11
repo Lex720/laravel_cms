@@ -782,3 +782,83 @@
         opacity: 0;
     }
 }
+
+
+/* SVD Drawning Animation ======================================================== */
+
+.demo-drawings {
+    background: #F17370;
+    color: #fff;
+    padding: 100px 0 100px;
+}
+
+svg {
+    pointer-events: none;
+}
+
+/* Demo 1 */
+
+.demo-drawings figcaption {
+    margin: 0 auto 0 auto;
+    max-width: 100%;
+    width: 95%;
+    text-align: center;
+}
+
+.demo-drawings figcaption h2 {
+    font-weight: 300;
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+
+.demo-drawings figcaption p {
+    font-size: 1.3em;
+}
+
+.drawings {
+    position: relative;
+    max-height: 600px;
+}
+
+.svgillustration {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-height: 100%;
+    max-width: 100%;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.showsvg {
+    opacity: 1;
+}
+
+.hidesvg {
+    opacity: 0;
+}
+
+.line-drawing,
+.svgillustration {
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.line-drawing path {
+    fill: none;
+    stroke: white;
+    stroke-width: 3;
+}
+
+path.line-round {
+    stroke-linecap: round;
+}
+
+path.stroke-medium {
+    stroke-width: 2;
+}
+
+path.stroke-thin {
+    stroke-width: 1;
+}

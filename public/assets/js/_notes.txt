@@ -14,8 +14,11 @@ Parallax Content Slider:
 
 
 Mockup Slider:
--main
--classie
+-mockup
+
+
+SVG Drawning Animation
+-svganimations
 
 
 Quote Rotator:
@@ -26,5 +29,6 @@ Hover Effects:
 -toucheffects
 
 
-Modernizr Custom
+Others
 -modernizr.custom
+-classie
