@@ -24,17 +24,19 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(function () {
+/*$env = $app->detectEnvironment(function () {
 
 	return 'local';
 
-});
+});*/
 
-/*$env = $app->detectEnvironment(array(
+$env = $app->detectEnvironment(array(
 
-	'local' => array('SISTEMAS02'),
+    'local'         => array('SISTEMAS02'),
 
-));*/
+    'production'    => array('visiopro.com.ve')
+
+));
 
 /*
 |--------------------------------------------------------------------------
