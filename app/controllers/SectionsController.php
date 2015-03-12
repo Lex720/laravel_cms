@@ -2,7 +2,8 @@
 
 class SectionsController extends \BaseController {
 
-	protected $rules = array (
+	protected $rules = array 
+	(
 		'name' => 'required',
 		'slug_url' => 'required',
 		'type' => 'required|in:page,blog',

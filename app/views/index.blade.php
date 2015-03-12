@@ -520,45 +520,49 @@
                         <h3>Formulario de contacto</h3>
                         
                         <br>
-                    
-                        <form class="form-horizontal" role="form">
-                        
+
+                        {{ Form::open(['action' => 'HomeController@sendEmail', 'method' => 'POST', 'class' => 'form-horizontal']) }}
+
                             <div class="form-group">
-                                <label for="nombre" class="col-sm-2 control-label">Nombre</label>
+                                {{ Form::label('name', 'Nombre', ['class' => 'col-sm-2 control-label']) }}
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                                    {{ Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Nombre', 'required' => true]) }}
+                                    {{ $errors->first('name', '<p class="error">:message</p>') }}
                                 </div>
                             </div>
-                        
+
                             <div class="form-group">
-                                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                {{ Form::label('email', 'Email', ['class' => 'col-sm-2 control-label']) }}
                                 <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                    {{ Form::email('email', '', ['class' => 'form-control', 'placeholder' => 'Email', 'required' => true]) }}
+                                    {{ $errors->first('email', '<p class="error">:message</p>') }}
                                 </div>
                             </div>
-                            
+
                             <div class="form-group">
-                                <label for="asunto" class="col-sm-2 control-label">Asunto</label>
+                                {{ Form::label('subject', 'Asunto', ['class' => 'col-sm-2 control-label']) }}
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="asunto" placeholder="Asunto" required>
+                                    {{ Form::text('subject', '', ['class' => 'form-control', 'placeholder' => 'Asunto', 'required' => true]) }}
+                                    {{ $errors->first('subject', '<p class="error">:message</p>') }}
                                 </div>
                             </div>
-                            
+
                             <div class="form-group">
-                                <label for="mensaje" class="col-sm-2 control-label">Mensaje</label>
+                                {{ Form::label('message', 'Mensaje', ['class' => 'col-sm-2 control-label']) }}
                                 <div class="col-sm-10">
-                                    <textarea class="form-control" rows="3" placeholder="Mensaje" required></textarea>
+                                    {{ Form::textarea('message', '', ['class' => 'form-control', 'placeholder' => 'Mensaje', 'required' => true, 'rows' => '3']) }}
+                                    {{ $errors->first('message', '<p class="error">:message</p>') }}
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <div class="col-sm-offset-2 col-sm-8">
-                                    <button type="submit" class="btn">Enviar mensaje</button>
-                                    <button type="reset" class="btn">Limpiar</button>
+                                    {{ Form::button('Enviar mensaje', ['type' => 'submit', 'class' => 'btn']) }}
+                                    {{ Form::button('Limpiar', ['type' => 'reset', 'class' => 'btn']) }}
                                 </div>
                             </div>
-                            
-                        </form>
+
+                        {{ Form::close() }}
                     
                     </div>
                     
@@ -587,6 +591,15 @@
                         </address>
                         
                     </div>
+
+                    @if(Session::has('message'))
+                        <div class="col-md-4 col-md-offset-4 pad50">
+                            <div class="alert alert-warning">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <strong>{{ Session::get('message', '') }}</strong>
+                            </div>
+                        </div>
+                    @endif
                     
                 </div>
             

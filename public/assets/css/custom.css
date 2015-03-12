@@ -52,10 +52,6 @@ a:hover {
     outline: 0;
 }
 
-.pad50 {
-    padding-top: 50px;
-}
-
 .underlineh1 {
     width: 350px;
     height: auto;
@@ -70,6 +66,16 @@ a:hover {
         width: 250px;
     }
 
+}
+
+.pad50 {
+    padding-top: 50px;
+}
+
+.error {
+    font-size: 1.1em;
+    color: #F00;
+    font-weight: 100;
 }
 
 
@@ -87,14 +93,14 @@ a:hover {
     height: auto;
     padding-top: 100px;
     padding-bottom: 100px;
-    background: #f7842c; /* Old browsers */
-    background: -moz-linear-gradient(top,  #f7842c 0%, #fcccb5 5%, #fff7ef 10%, #fffaf7 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7842c), color-stop(5%,#fcccb5), color-stop(10%,#fff7ef), color-stop(100%,#fffaf7)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #f7842c 0%,#fcccb5 5%,#fff7ef 10%,#fffaf7 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #f7842c 0%,#fcccb5 5%,#fff7ef 10%,#fffaf7 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #f7842c 0%,#fcccb5 5%,#fff7ef 10%,#fffaf7 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #f7842c 0%,#fcccb5 5%,#fff7ef 10%,#fffaf7 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7842c', endColorstr='#fffaf7',GradientType=0 ); /* IE6-9 */
+    background: #70c2d1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #70c2d1 0%, #c5e1e5 5%, #fff7ef 10%, #fffaf7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#70c2d1), color-stop(5%,#c5e1e5), color-stop(10%,#fff7ef), color-stop(100%,#fffaf7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #70c2d1 0%,#c5e1e5 5%,#fff7ef 10%,#fffaf7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #70c2d1 0%,#c5e1e5 5%,#fff7ef 10%,#fffaf7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #70c2d1 0%,#c5e1e5 5%,#fff7ef 10%,#fffaf7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #70c2d1 0%,#c5e1e5 5%,#fff7ef 10%,#fffaf7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70c2d1', endColorstr='#fffaf7',GradientType=0 ); /* IE6-9 */
 }
 
 .about-section h1 {
@@ -102,11 +108,11 @@ a:hover {
 }
 
 .about-section .underlineh1 {
-    border-bottom: 3px solid #F96C00;
+    border-bottom: 3px solid #25B7D3;
 }
 
 .about-section p p2 {
-    color: #F96C00;
+    color: #25B7D3;
 }
 
 .thumbs {
@@ -123,7 +129,7 @@ a:hover {
 
 .thumbs h3 {
     font-size: 1.7em;
-    color: #F96C00;
+    color: #25B7D3;
     font-weight: 600;
 }
 
