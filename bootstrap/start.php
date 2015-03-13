@@ -32,7 +32,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-    'local'         => array('SISTEMAS02'),
+    'local'         => array('SISTEMAS02', 'LexDesktop'),
 
     'production'    => array('visiopro.com.ve')
 
