@@ -23,7 +23,7 @@ class HomeController extends BaseController {
 			'name'		=>	Input::get('name'),
 			'email'		=>	Input::get('email'),
 			'subject'	=>	Input::get('subject'),
-			'message'	=>	Input::get('message')
+			'msg'		=>	Input::get('message')
 		);
 
 		$name = $data['name'];
@@ -36,8 +36,8 @@ class HomeController extends BaseController {
 		{
 			Mail::send('emails.template', $data, function($message) use ($name, $email, $subject)
 	        {
+	        	$message->from($email, $name);
 	            $message->to('info@visiopro.com.ve', 'Visionary Projects');
-	            $message->from($email, $name);
 	            $message->subject($subject);
 	        });
 
