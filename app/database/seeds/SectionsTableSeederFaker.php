@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Hash;
 use Faker\Factory as Faker;
 use Illuminate\Database\Eloquent\Collection;
 
-class SectionsTableSeeder extends Seeder {
+class SectionsTableSeederFaker extends Seeder {
 
     public function run()
     {
