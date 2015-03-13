@@ -10,7 +10,7 @@ class SectionsController extends \BaseController {
 		'menu' => 'required|in:1,0',
 		'menu_order' => 'required|integer',
 		'published' => 'required|in:1,0'
-		);
+	);
 
 	/**
 	 * Display a listing of the resource.
@@ -19,26 +19,9 @@ class SectionsController extends \BaseController {
 	 */
 	public function index()
 	{
-		//$sections = Sections::search(Input::all());
+		$data = Input::all();
 
-		$q = Sections::select();
-
-		if (Input::has('search_name'))
-		{
-			$q->where('name', Input::get('search_name'));
-		}
-
-		if (Input::has('search_published'))
-		{
-			$q->where('published', Input::get('search_published'));
-		}
-
-		if (Input::has('search_menu'))
-		{
-			$q->where('menu', Input::get('search_menu'));
-		}
-
-		$sections = $q->get();
+		$sections = Sections::search($data);
 
 		return View::make('sections/list', compact('sections'));
 	}

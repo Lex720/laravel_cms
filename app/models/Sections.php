@@ -3,29 +3,32 @@
 class Sections extends Eloquent {
 
 	protected $fillable = ['name', 'slug_url', 'type', 'menu', 'menu_order', 'published'];
+	public static $filters = ['search_name', 'search_published', 'search_menu'];
 
-	/*public static function search(array $data = array())
+	public static function search($data)
 	{
-		$data = array_filter($data, 'strlen');
+		$data = array_only($data, static::$filters); //define los filtros que se permiten
+		$data = array_filter($data, 'strlen'); //verifica si el valor del campo es 0 o null
 
 		$q = Sections::select();
 
-		if ( ! isset ($data['name']))
+		if ( isset ($data['search_name']) )
 		{
-			$q->where('name', Input::get('search_name'));
+			$search = Input::get('search_name');
+			$q->where('name', 'LIKE', "%$search%");
 		}
 
-		if (Input::has('search_published'))
+		if ( isset ($data['search_published']) )
 		{
 			$q->where('published', Input::get('search_published'));
 		}
 
-		if (Input::has('search_menu'))
+		if ( isset ($data['search_menu']) )
 		{
 			$q->where('menu', Input::get('search_menu'));
 		}
 
-		$sections = $q->get();
-	}*/
+		return $q->get(); //retorna a la variable $sections
+	}
 
 }

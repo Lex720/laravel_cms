@@ -14,19 +14,19 @@ $I->seeElement('input', ['name' => 'search_name']);
 
 
 // When 
-$I->fillField('search_name', 'Our company');
+$I->fillField('search_name', 'company');
 $I->selectOption('search_published', '1');
 // And
 $I->click('Filter sections');
 
 
 // Then
-$I->seeCurrentUrlEquals('/sections?search_name=Our+company&search_published=1&search_menu=');
+$I->seeCurrentUrlEquals('/sections?search_name=company&search_published=1&search_menu=');
 $I->expectTo('not to see our company record');
 // Then
 $I->see('There are 0 sections');
 $I->dontSee('Our company', 'td.name');
-$I->seeInField('search_name', 'Our company');
+$I->seeInField('search_name', 'company');
 
 
 // When
