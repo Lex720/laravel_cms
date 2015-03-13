@@ -8,7 +8,7 @@
 
 @section('content')
 
-	<h1 align="center">Authentication system</h1>
+	<h1 align="center">Autenticación</h1>
 
 	<div class="container">
 
@@ -21,13 +21,13 @@
 				</div>
 			@endif
 
-			<h2 class="form-signin-heading">Log in</h2>
+			<h2 class="form-signin-heading">Ingrese sus datos:</h2>
 			
 			{{ Form::text('username', null, ['class' => 'form-control', 'placeholder' => 'Username', 'autofocus' => '']) }}
 			{{ Form::password('password', ['class' => 'form-control', 'placeholder' => 'Password']) }}
 			
 			<div class="checkbox">
-				<label> {{ Form::checkbox('remember', true) }} Remember me </label>
+				<label> {{ Form::checkbox('remember', true) }} ¿Recordar? </label>
 			</div>
 
 			{{ Form::submit('Log in', ['class' => 'btn btn-primary btn-block']) }}

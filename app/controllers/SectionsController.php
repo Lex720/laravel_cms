@@ -21,7 +21,7 @@ class SectionsController extends \BaseController {
 	{
 		$data = Input::all();
 
-		$sections = Sections::search($data);
+		$sections = Sections::search($data, Sections::PAGINATE);
 
 		return View::make('sections/list', compact('sections'));
 	}

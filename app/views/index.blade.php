@@ -160,12 +160,6 @@
                             <!--<a href="#" class="da-link">Read more</a>
                             <div class="da-img"> {{ HTML::image('assets/img/slider/parallax/3.png') }} </div>-->
                         </div>
-                        <div class="da-slide">
-                            <h2>Quality Control</h2>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                            <!--<a href="#" class="da-link">Read more</a>
-                            <div class="da-img"> {{ HTML::image('assets/img/slider/parallax/4.png') }} </div>-->
-                        </div>
                         <nav class="da-arrows">
                             <span class="da-arrows-prev"></span>
                             <span class="da-arrows-next"></span>

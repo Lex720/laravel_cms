@@ -5,7 +5,9 @@ class Sections extends Eloquent {
 	protected $fillable = ['name', 'slug_url', 'type', 'menu', 'menu_order', 'published'];
 	public static $filters = ['search_name', 'search_published', 'search_menu'];
 
-	public static function search($data)
+	const PAGINATE = true;
+
+	public static function search($data, $paginate = false)
 	{
 		$data = array_only($data, static::$filters); //define los filtros que se permiten
 		$data = array_filter($data, 'strlen'); //verifica si el valor del campo es 0 o null
@@ -28,7 +30,7 @@ class Sections extends Eloquent {
 			$q->where('menu', Input::get('search_menu'));
 		}
 
-		return $q->get(); //retorna a la variable $sections
+		return $paginate ? $q->paginate() : $q->get();
 	}
 
 }

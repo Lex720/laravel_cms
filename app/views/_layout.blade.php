@@ -42,8 +42,7 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
 
-            <li class="active"> {{ HTML::linkRoute('sections.index', 'Home') }} </li>
-            <li> {{ HTML::linkRoute('sections.create', 'Create Section') }} </li>
+            <li class="active"> {{ HTML::linkRoute('sections.index', 'CMS') }} </li>
 
           </ul>
         </div><!--/.nav-collapse -->

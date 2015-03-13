@@ -10,7 +10,9 @@
 
 	<h1>Sections</h1>
 
-	<p>There are {{ $sections->count() }} sections</p>
+	<p>
+	There are {{ $sections->getTotal() }} sections, showing page {{ $sections->getCurrentPage() }} of {{ $sections->getLastPage() }}
+	</p>
 
 	<br>
 
@@ -31,17 +33,17 @@
 		</thead>
 
 		<tbody>
-			@foreach ($sections as $sections)
+			@foreach ($sections as $section)
 
 			<tr>
-				<td class="name">{{ $sections->name }}</td>
-				<td>{{ $sections->slug_url }}</td>
-				<td>{{ $sections->published ? "Published" : "Draft" }}</td>
-				<td>{{ $sections->menu ? "Show in menu" : "Don't show in menu" }}</td>
+				<td class="name">{{ $section->name }}</td>
+				<td>{{ $section->slug_url }}</td>
+				<td>{{ $section->published ? "Published" : "Draft" }}</td>
+				<td>{{ $section->menu ? "Show in menu" : "Don't show in menu" }}</td>
 				<td>
-					{{ HTML::linkRoute('sections.show', 'Show', ['id' => $sections->id], ['class' => 'btn-show']) }}
+					{{ HTML::linkRoute('sections.show', 'Show', ['id' => $section->id], ['class' => 'btn-show']) }}
 					/
-					{{ HTML::linkRoute('sections.edit', 'Edit', ['id' => $sections->id], ['class' => 'btn-edit']) }}
+					{{ HTML::linkRoute('sections.edit', 'Edit', ['id' => $section->id], ['class' => 'btn-edit']) }}
 				</td>
 			</tr>
 
@@ -49,6 +51,8 @@
 		</tbody>
 
 	</table>
+
+	{{ $sections->links() }}
 
 	<br>
 

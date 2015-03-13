@@ -26,8 +26,8 @@ class FunctionalHelper extends \Codeception\Module
 				'slug_url' => \Str::slug($name),
 				'type' => $faker->randomElement(['page', 'blog']),
 				'menu' => rand(1, 10),
-				'menu_order' => rand(1, 0),
-				'published' => rand(1, 0)
+				'menu_order' => rand(0, 1),
+				'published' => rand(0, 1)
 			]));
 		}
 
