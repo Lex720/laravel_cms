@@ -44,7 +44,15 @@
 
             <li class="active"> {{ HTML::linkRoute('sections.index', 'CMS') }} </li>
             <li class="active"> {{ HTML::linkRoute('sections.create', 'Add a new section') }} </li>
-            <li class="active"> {{ HTML::linkAction('AuthController@logOut', 'Log Out') }} </li>
+
+            <li class="active">
+            <?php
+            if (Auth::check()) echo HTML::linkAction('AuthController@logOut', 'Logout');
+	        else  echo HTML::linkAction('AuthController@showLogin', 'Login');
+	        ?>
+	        </li>
+
+            
 
           </ul>
         </div><!--/.nav-collapse -->

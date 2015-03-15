@@ -1,4 +1,4 @@
-<?php namespace _cms/User;
+<?php namespace _cms\User;
 
 use _cms\Base\BaseEntity;
 use Illuminate\Auth\UserTrait;

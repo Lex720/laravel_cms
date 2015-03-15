@@ -34,7 +34,7 @@ class AuthController extends BaseController {
         else 
         {
             // Si los datos no son los correctos volvemos al login y mostramos un error
-            return Redirect::back()->withInput()->with('error_message', 'Data invalida');
+            return Redirect::back()->withInput()->with('error_message', 'Datos invalidos');
         }
     }
  

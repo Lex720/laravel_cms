@@ -1,0 +1,5 @@
+Cambiar la ruta del modelo User en app/config/auth.php
+
+en la linea 'model' => 'User',
+
+por 'model' => '_cms\User\User',
