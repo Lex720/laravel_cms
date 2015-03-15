@@ -10,28 +10,28 @@ $sections = $I->haveSections(); //Created random sections
 // And
 $I->amOnPage('sections');
 // Then
-$I->seeElement('input', ['name' => 'search_name']);
+$I->seeElement('input', ['name' => 'name']);
 
 
 // When 
-$I->fillField('search_name', 'company');
-$I->selectOption('search_published', '1');
+$I->fillField('name', 'company');
+$I->selectOption('published', '1');
 // And
 $I->click('Filter sections');
 
 
 // Then
-$I->seeCurrentUrlEquals('/sections?search_name=company&search_published=1&search_menu=');
+$I->seeCurrentUrlEquals('/sections?name=company&published=1&menu=');
 $I->expectTo('not to see our company record');
 // Then
 $I->see('There are 0 sections');
 $I->dontSee('Our company', 'td.name');
-$I->seeInField('search_name', 'company');
+$I->seeInField('name', 'company');
 
 
 // When
-$I->selectOption('search_published', '0');
-$I->selectOption('search_menu', '0');
+$I->selectOption('published', '0');
+$I->selectOption('menu', '0');
 // And
 $I->click('Filter sections');
 // Then
@@ -40,8 +40,8 @@ $I->dontSee('Our company', 'td.name');
 
 
 // When
-$I->seeOptionIsSelected('search_published', 'Draft');
-$I->selectOption('search_menu', '1');
+$I->seeOptionIsSelected('published', 'Draft');
+$I->selectOption('menu', '1');
 // And
 $I->click('Filter sections');
 // Then

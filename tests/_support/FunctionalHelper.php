@@ -3,7 +3,7 @@ namespace Codeception\Module;
 
 use Faker\Factory as Faker;
 use Illuminate\Database\Eloquent\Collection;
-use Sections;
+use _cms\Sections\Sections;
 
 // here you can define custom actions
 // all public methods declared in helper class will be available in $I

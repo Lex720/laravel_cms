@@ -43,6 +43,8 @@
           <ul class="nav navbar-nav">
 
             <li class="active"> {{ HTML::linkRoute('sections.index', 'CMS') }} </li>
+            <li class="active"> {{ HTML::linkRoute('sections.create', 'Add a new section') }} </li>
+            <li class="active"> {{ HTML::linkAction('AuthController@logOut', 'Log Out') }} </li>
 
           </ul>
         </div><!--/.nav-collapse -->

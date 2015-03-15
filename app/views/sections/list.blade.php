@@ -54,10 +54,4 @@
 
 	{{ $sections->links() }}
 
-	<br>
-
-	<p>{{ HTML::linkRoute('sections.create', 'Add a new section') }}</p>
-
-	<p>{{ HTML::linkAction('AuthController@logOut', 'Log out') }}</p>
-
 @stop

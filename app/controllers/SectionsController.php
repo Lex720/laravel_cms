@@ -1,5 +1,7 @@
 <?php
 
+use _cms\Sections\SectionsRepo;
+
 class SectionsController extends \BaseController {
 
 	protected $rules = array 
@@ -12,6 +14,13 @@ class SectionsController extends \BaseController {
 		'published' => 'required|in:1,0'
 	);
 
+	protected $sectionsRepo;
+
+	public function __construct(SectionsRepo $sectionsRepo)
+	{
+		$this->sectionsRepo = $sectionsRepo;
+	}
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -20,8 +29,9 @@ class SectionsController extends \BaseController {
 	public function index()
 	{
 		$data = Input::all();
+		$paginate = true;
 
-		$sections = Sections::search($data, Sections::PAGINATE);
+		$sections = $this->sectionsRepo->search($data, $paginate);
 
 		return View::make('sections/list', compact('sections'));
 	}
@@ -51,7 +61,7 @@ class SectionsController extends \BaseController {
 
 		if ($validator->passes()) {
 
-			$sections = Sections::create($data);
+			$sections = $this->sectionsRepo->create($data);
     		return Redirect::route('sections.show', $sections->id);
 		}
 		else {
@@ -70,8 +80,7 @@ class SectionsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$sections = Sections::findOrFail($id);
-
+		$sections = $this->sectionsRepo->findOrFail($id);
     	return View::make('sections/show')->with('sections', $sections);
 	}
 
@@ -84,8 +93,7 @@ class SectionsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		$sections = Sections::findOrFail($id);
-
+		$sections = $this->sectionsRepo->findOrFail($id);
 		return View::make('sections/edit')->with('sections', $sections);
 	}
 
@@ -98,7 +106,7 @@ class SectionsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		$sections = Sections::findOrFail($id);
+		$sections = $this->sectionsRepo->findOrFail($id);
 
 		$data = Input::all();
 
@@ -106,8 +114,7 @@ class SectionsController extends \BaseController {
 
 		if ($validator->passes()) {
 
-			$sections->fill($data);
-			$sections->save();
+			$this->sectionsRepo->update($sections, $data);
 			return Redirect::route('sections.show', $sections->id);
 		}
 		else {
@@ -125,8 +132,8 @@ class SectionsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		$sections = Sections::findOrFail($id);
-		$sections->delete();
+		$sections = $this->sectionsRepo->findOrFail($id);
+		$this->sectionsRepo->delete($sections);
 
 		return Redirect::route('sections.index');
 	}
