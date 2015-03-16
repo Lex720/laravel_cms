@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Hash;
 
+use Illuminate\Database\Eloquent\Collection;
+use _cms\User\User;
+
 class UserTableSeeder extends Seeder {
 
     public function run()
