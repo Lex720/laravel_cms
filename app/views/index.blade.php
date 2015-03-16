@@ -147,26 +147,26 @@
                             <p>¿Tienes un negocio y piensas en impulsar tus ventas?<br>
                             ¿Quieres dar a conocer tus servicios?<br>
                             ¿Piensas crecer en el mercado?</p>
-                            <a href="#" class="da-link">Saber mas</a>
+                            <a href="#" class="da-link">
+                            <nav class="da-arrows">
+                            <span class="da-arrows-next">Saber mas</span>
+                            </nav>
+                            </a>
                             <!--<div class="da-img"> {{ HTML::image('assets/img/slider/parallax/1.png') }} </div>-->
                         </div>
                         <div class="da-slide">
-                            <h2>Visionary Projects, C.A</h2>
-                            <p>Somos una compañía dedicada a brindarte soluciones de diseño y desarrollo web acorde a tus necesidades.</p>
+                            <h2>Visionary Projects</h2>
+                            <p>Somos una compañía dedicada a brindar soluciones de diseño y desarrollo web acorde a tus necesidades.</p>
                             <!--<a href="#" class="da-link">Read more</a>
                             <div class="da-img"> {{ HTML::image('assets/img/slider/parallax/2.png') }} </div>-->
                         </div>
-                        <!--<nav class="da-arrows">
-                            <span class="da-arrows-prev"></span>
-                            <span class="da-arrows-next"></span>
-                        </nav>-->
                     </div>
             
                     <script type="text/javascript">
                         $(function() {
                         
                             $('#da-slider').cslider({
-                                autoplay    : false,
+                                autoplay    : true,
 
                                 bgincrement : 100,
                                 // increment the background position 
@@ -175,7 +175,7 @@
                                 current     : 0,    
                                 // index of current slide
                                 
-                                interval    : 10000  
+                                interval    : 6000  
                                 // time between transitions
 
                             });
@@ -194,13 +194,13 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                     
-                        <h1>¡Conoce sobre nosotros!</h1><div class="underlineh1"></div>
+                        <h1>¡Conoce acerca de nosotros!</h1><div class="underlineh1"></div>
 
                         <br><br>
                 
                         <p class="visible-xs"> {{-- HTML::image('assets/img/logo.png', '', array('class' => 'img-responsive')) --}} </p>
                         
-                        <p> <p2><b>Visionary Projects</b></p2> es una compañ&iacute;a <p2>dedicada</p2> a brindarte soluciones de diseño y desarrollo web.</p>
+                        <p> <p2><b>Visionary Projects</b></p2> es una compañ&iacute;a <p2>dedicada</p2> a brindar soluciones de diseño y desarrollo web.</p>
                         
                         <br><br><br>
 
@@ -209,7 +209,7 @@
                                 <div class="caption">
                                     <img src="{{ ('assets/img/thumbs/1.png') }}" >
                                     <h3>Excelente atencion</h3>
-                                    <p>En Visiopro nos esforzamos en ofrecer solo lo mejor, las soluciones más ajustadas a las necesidades y conveniencias de nuestros clientes, ofrecemos el mejor asesoramiento para hacer un óptimo marketing web a su empresa y mejora de los procesos internos. Su Éxito es nuestro Éxito!</p>
+                                    <p>En Visiopro nos esforzamos en ofrecer solo lo mejor, las soluciones más ajustadas a las necesidades y conveniencias de nuestros clientes, ofrecemos el mejor asesoramiento para hacer un óptimo marketing web a su empresa y mejora de los procesos internos. <p2>Su Éxito es nuestro Éxito!</p2></p>
                                 </div>
                             </div>
                         </div>
@@ -219,7 +219,7 @@
                                 <div class="caption">
                                     <img src="{{ ('assets/img/thumbs/2.png') }}" >
                                     <h3>Paginas originales</h3>
-                                    <p>Creamos páginas web dinámicas hechas a tu medida y necesidades. Estamos completamente comprometidos en ayudarte a impulsar tu imagen o empresa al darte presencia en internet con lo cual podrás lograr ser reconocido mientras aumentas la innovación y profesionalidad de tu marca.</p>
+                                    <p>Creamos páginas web dinámicas hechas a tu medida y necesidades. Estamos completamente comprometidos en ayudarte a impulsar tu imagen o empresa al darte presencia en internet con lo cual podrás lograr ser reconocido mientras aumentas la <p2>innovación y profesionalidad de tu marca.</p2></p>
                                 </div>
                             </div>
                         </div>
@@ -229,7 +229,7 @@
                                 <div class="caption">
                                     <img src="{{ ('assets/img/thumbs/3.png') }}" >
                                     <h3>Crecimiento empresarial</h3>
-                                    <p>Te ofrecemos novedosos métodos publicitarios que ayudarán a expandir tu negocio hacia nuevos horizontes aprovechando el sistema de marketing digital ya practicado en la actualidad por numerosas compañías en el mundo, únete a esta nueva tendencia que crece cada día más.. No te quedes atrás!</p>
+                                    <p>Ofrecemos novedosos métodos publicitarios que ayudarán a expandir tu negocio hacia nuevos horizontes aprovechando el sistema de marketing digital practicado en la actualidad por numerosas empresas, únete a esta nueva tendencia que crece cada día más.. <p2>No te quedes atrás!</p2></p>
                                 </div>
                             </div>
                         </div>
@@ -467,7 +467,7 @@
                                 <img src="{{ ('assets/img/grid/3.png') }}" >
                                 <figcaption>
                                     <h3>eCommerce</h3>
-                                    <span>Ofrecemos sitios de venta virtual completamente automatizados y fáciles de usar, en ellos podrás exhibir y vender tus productos para que tu negocio se expanda siga creciendo en el mercado.</span>
+                                    <span>Ofrecemos sitios de venta virtual completamente automatizados y fáciles de usar, en ellos podrás exhibir y vender tus productos para que tu negocio siga creciendo en el mercado.</span>
                                     <a class="page-scroll" href="#contact">Pedir servicio</a>
                                 </figcaption>
                             </figure>
@@ -591,7 +591,7 @@
                         <div class="col-md-4 col-md-offset-4 pad50">
                             <div class="alert alert-warning">
                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                <strong>{{ Session::get('message', '') }}</strong>
+                                <p><strong>{{ Session::get('message', '') }}</strong></p>
                             </div>
                         </div>
                     @endif

@@ -48,9 +48,9 @@
             <li class="active">
             <?php
             if (Auth::check()) echo HTML::linkAction('AuthController@logOut', 'Logout');
-	        else  echo HTML::linkAction('AuthController@showLogin', 'Login');
-	        ?>
-	        </li>
+  	        else echo HTML::linkAction('AuthController@showLogin', 'Login');
+  	        ?>
+  	        </li>
 
             
 
