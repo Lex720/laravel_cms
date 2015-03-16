@@ -79,3 +79,5 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+App::bind('_cms\Sections\SectionsRepoInterface', '_cms\Sections\SectionsRepo');

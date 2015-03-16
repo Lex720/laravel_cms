@@ -166,7 +166,7 @@
                         $(function() {
                         
                             $('#da-slider').cslider({
-                                autoplay    : true,
+                                autoplay    : false,
 
                                 bgincrement : 100,
                                 // increment the background position 

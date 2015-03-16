@@ -1,6 +1,6 @@
 <?php
 
-use _cms\Sections\SectionsRepo;
+use _cms\Sections\SectionsRepoInterface;
 
 class SectionsController extends \BaseController {
 
@@ -16,7 +16,7 @@ class SectionsController extends \BaseController {
 
 	protected $sectionsRepo;
 
-	public function __construct(SectionsRepo $sectionsRepo)
+	public function __construct(SectionsRepoInterface $sectionsRepo)
 	{
 		$this->sectionsRepo = $sectionsRepo;
 	}

@@ -11,12 +11,12 @@ abstract class BaseRepo {
 		return $this->getModel()->findOrFail($id);
 	}
 
-	public function create($data)
+	public function create(array $data)
 	{
 		return $this->getModel()->create($data);
 	}
 
-	public function update(BaseEntity $entity, $data)
+	public function update(BaseEntity $entity, array $data)
 	{
 		$entity->fill($data);
 		$entity->save();
@@ -29,7 +29,7 @@ abstract class BaseRepo {
 		return $entity;
 	}
 
-	public function search($data, $paginate)
+	public function search(array $data, $paginate)
 	{
 		$data = array_only($data, $this->filters); //define los filtros que se permiten
 		$data = array_filter($data, 'strlen'); //verifica si el valor del campo es 0 o null
