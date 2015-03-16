@@ -6,7 +6,7 @@ abstract class BaseRepo {
 
 	abstract public function getModel();
 
-	public function findOrFail($id)
+	public function find($id)
 	{
 		return $this->getModel()->findOrFail($id);
 	}
@@ -27,6 +27,15 @@ abstract class BaseRepo {
 	{
 		$entity->delete();
 		return $entity;
+	}
+
+	public function listSections($paginate)
+	{
+		$q = $this->getModel()->select();
+
+		return $paginate ? 
+		$q->paginate()
+		: $q->get();
 	}
 
 	public function search(array $data, $paginate)

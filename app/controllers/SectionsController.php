@@ -80,7 +80,7 @@ class SectionsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$sections = $this->sectionsRepo->findOrFail($id);
+		$sections = $this->sectionsRepo->find($id);
     	return View::make('sections/show')->with('sections', $sections);
 	}
 
@@ -93,7 +93,7 @@ class SectionsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		$sections = $this->sectionsRepo->findOrFail($id);
+		$sections = $this->sectionsRepo->find($id);
 		return View::make('sections/edit')->with('sections', $sections);
 	}
 
@@ -106,7 +106,7 @@ class SectionsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		$sections = $this->sectionsRepo->findOrFail($id);
+		$sections = $this->sectionsRepo->find($id);
 
 		$data = Input::all();
 
@@ -132,7 +132,7 @@ class SectionsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		$sections = $this->sectionsRepo->findOrFail($id);
+		$sections = $this->sectionsRepo->find($id);
 		$this->sectionsRepo->delete($sections);
 
 		return Redirect::route('sections.index');

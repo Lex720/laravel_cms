@@ -2,6 +2,7 @@
 
 Route::get('/', 'HomeController@showWelcome');
 Route::post('enviar-email', 'HomeController@sendEmail');
+Route::get('proyectos', 'HomeController@showProjects');
 
 
 Route::get('login', 'AuthController@showLogin');

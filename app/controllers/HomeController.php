@@ -1,5 +1,7 @@
 <?php
 
+use _cms\Sections\SectionsRepoInterface;
+
 class HomeController extends BaseController {
 
 	protected $rules = array 
@@ -10,9 +12,25 @@ class HomeController extends BaseController {
 		'message' => 'between:3,500',
 	);
 
+	protected $sectionsRepo;
+
+	public function __construct(SectionsRepoInterface $sectionsRepo)
+	{
+		$this->sectionsRepo = $sectionsRepo;
+	}
+
 	public function showWelcome()
 	{
 		return View::make('index');
+	}
+
+	public function showProjects()
+	{
+		$paginate = true;
+
+		$sections = $this->sectionsRepo->listSections($paginate);
+
+		return View::make('projects', compact('sections'));
 	}
 
 	public function sendEmail()
