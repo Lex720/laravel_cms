@@ -22,8 +22,8 @@
         display: block;
         display: block;
         width: auto;
-        height: 65px;
-        margin: -20px 0 0 0;
+        height: 60px;
+        margin: -17px 0 0 0;
         padding: 0;
     }
 
@@ -59,7 +59,7 @@
     }
 
     .top-nav-collapse {
-        padding: 15px 0 15px 0;
+        padding: 10px 0 10px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -77,8 +77,8 @@
     .top-nav-collapse img {
         display: block;
         width: auto;
-        height: 65px;
-        margin: -20px 0 0 0;
+        height: 60px;
+        margin: -17px 0 0 0;
         padding: 0;
     }
 
@@ -190,8 +190,8 @@
 
 	.navbar img {
 		width: auto;
-		height: 32px;
-		margin: 0;
+		height: 50px;
+		margin: -15px 0 0 0;
 		padding: 0;
 		}
 

@@ -192,9 +192,16 @@ svg {
 
 .demo-drawings figcaption {
     margin: 0 auto 0 auto;
+    padding: 0 10% 0 10%;
     max-width: 100%;
     width: 95%;
     text-align: center;
+}
+
+@media screen and (max-width:769px){
+    .demo-drawings figcaption {
+        padding: 0 1% 0 1%;
+    }
 }
 
 .demo-drawings figcaption h2 {
@@ -204,7 +211,7 @@ svg {
 }
 
 .demo-drawings figcaption p {
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #333;
 }
 
@@ -348,7 +355,7 @@ path.stroke-thin {
 }
 
 .cs-style-6 figcaption h3 {
-    margin-top: 70px;
+    margin-top: 30px;
     font-size: 2.5em;
     color: #25B7D3;
 }
@@ -356,7 +363,7 @@ path.stroke-thin {
 .cs-style-6 figcaption span {
     display: block;
     margin-top: 20px;
-    font-size: 1.3em;
+    font-size: 1.4em;
     text-align: justify;
     color: #fff;
 }

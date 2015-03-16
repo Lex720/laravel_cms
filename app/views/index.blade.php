@@ -104,7 +104,7 @@
                     <div class="navbar-brand page-scroll hidden-xs img1"> {{ HTML::image('assets/img/logos/logo.png') }} </div>
                     <div class="navbar-brand page-scroll hidden-xs img2"> {{ HTML::image('assets/img/logos/logo_black.png') }} </div>
 
-                    <div class="navbar-brand page-scroll visible-xs"> {{ HTML::image('assets/img/logos/logo_text.png') }} </div>
+                    <div class="navbar-brand page-scroll visible-xs"> {{ HTML::image('assets/img/logos/logo_ico.png') }} </div>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -143,34 +143,30 @@
                     <!-- Parallax Slider -->
                     <div id="da-slider" class="da-slider">
                         <div class="da-slide">
-                            <h2>Easy management</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                            <!--<a href="#" class="da-link">Read more</a>
-                            <div class="da-img"> {{ HTML::image('assets/img/slider/parallax/1.png') }} </div>-->
+                            <h2>¡Hola, bienvenido!</h2>
+                            <p>¿Tienes un negocio y piensas en impulsar tus ventas?<br>
+                            ¿Quieres dar a conocer tus servicios?<br>
+                            ¿Piensas crecer en el mercado?</p>
+                            <a href="#" class="da-link">Saber mas</a>
+                            <!--<div class="da-img"> {{ HTML::image('assets/img/slider/parallax/1.png') }} </div>-->
                         </div>
                         <div class="da-slide">
-                            <h2>Revolution</h2>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                            <h2>Visionary Projects, C.A</h2>
+                            <p>Somos una compañía dedicada a brindarte soluciones de diseño y desarrollo web acorde a tus necesidades.</p>
                             <!--<a href="#" class="da-link">Read more</a>
                             <div class="da-img"> {{ HTML::image('assets/img/slider/parallax/2.png') }} </div>-->
                         </div>
-                        <div class="da-slide">
-                            <h2>Warm welcome</h2>
-                            <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
-                            <!--<a href="#" class="da-link">Read more</a>
-                            <div class="da-img"> {{ HTML::image('assets/img/slider/parallax/3.png') }} </div>-->
-                        </div>
-                        <nav class="da-arrows">
+                        <!--<nav class="da-arrows">
                             <span class="da-arrows-prev"></span>
                             <span class="da-arrows-next"></span>
-                        </nav>
+                        </nav>-->
                     </div>
             
                     <script type="text/javascript">
                         $(function() {
                         
                             $('#da-slider').cslider({
-                                autoplay    : true,
+                                autoplay    : false,
 
                                 bgincrement : 100,
                                 // increment the background position 
@@ -179,7 +175,7 @@
                                 current     : 0,    
                                 // index of current slide
                                 
-                                interval    : 5000  
+                                interval    : 10000  
                                 // time between transitions
 
                             });
@@ -198,7 +194,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                     
-                        <h1>¡Hola, bienvenido!</h1><div class="underlineh1"></div>
+                        <h1>¡Conoce sobre nosotros!</h1><div class="underlineh1"></div>
 
                         <br><br>
                 
@@ -213,7 +209,7 @@
                                 <div class="caption">
                                     <img src="{{ ('assets/img/thumbs/1.png') }}" >
                                     <h3>Excelente atencion</h3>
-                                    <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
+                                    <p>En Visiopro nos esforzamos en ofrecer solo lo mejor, las soluciones más ajustadas a las necesidades y conveniencias de nuestros clientes, ofrecemos el mejor asesoramiento para hacer un óptimo marketing web a su empresa y mejora de los procesos internos. Su Éxito es nuestro Éxito!</p>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +219,7 @@
                                 <div class="caption">
                                     <img src="{{ ('assets/img/thumbs/2.png') }}" >
                                     <h3>Paginas originales</h3>
-                                    <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
+                                    <p>Creamos páginas web dinámicas hechas a tu medida y necesidades. Estamos completamente comprometidos en ayudarte a impulsar tu imagen o empresa al darte presencia en internet con lo cual podrás lograr ser reconocido mientras aumentas la innovación y profesionalidad de tu marca.</p>
                                 </div>
                             </div>
                         </div>
@@ -233,7 +229,7 @@
                                 <div class="caption">
                                     <img src="{{ ('assets/img/thumbs/3.png') }}" >
                                     <h3>Crecimiento empresarial</h3>
-                                    <p>Su estudio como campo del conocimiento está directamente relacionado con el comienzo de la Revolución Industrial, constituyendo una de las actividades pilares en el desarrollo de las sociedades modernas.</p>
+                                    <p>Te ofrecemos novedosos métodos publicitarios que ayudarán a expandir tu negocio hacia nuevos horizontes aprovechando el sistema de marketing digital ya practicado en la actualidad por numerosas compañías en el mundo, únete a esta nueva tendencia que crece cada día más.. No te quedes atrás!</p>
                                 </div>
                             </div>
                         </div>
@@ -315,7 +311,7 @@
 
                     <br><br>
 
-                    <p>Estos son los servicios que ofrecemos para ayudar a que tu empresa crezca y se expanda en su ambito comercial. <p2>Detalles</p2.></p>
+                    <p>Estos son los servicios que ofrecemos para ayudar a que tu empresa <p2>crezca y se expanda</p2> en su ambito comercial.</p>
 
                     <br>
 
@@ -337,8 +333,10 @@
                                 </svg>
                             </div>
                             <figcaption>
-                                <h2>Desarrollo Web</h2>
-                                <p>Fo shizzle mammasay mammasa mamma oo sa fo shizzle shizzle my nizzle crocodizzle things. Shizzle my nizzle crocodizzle quis arcu. Maecenizzle uhuh ... yih!</p>
+                                <h2>Diseño y desarrollo Web</h2>
+                                <p>Hacemos que tu sitio web sea visualmente atractivo para así garatizar tu éxito. Tenemos conocimientos y experiencia en todas las áreas de diseño/desarrollo de sitios y su funcionalidad.
+                                Todos nuestros proyectos de diseño web son desarrollados con base y fundamento pensando en las necesidades de tu negocio.
+                                El diseño web lo planificamos utilizando soluciones de vanguardia, a menudo de código abierto, limpio y semántico, compatible con los estándares del W3C.</p>
                             </figcaption>
                         </figure>
                         <br><br><br>
@@ -361,7 +359,9 @@
                             </div>
                             <figcaption>
                                 <h2>Diseño grafico e imagen corporativa</h2>
-                                <p>Fo shizzle mammasay mammasa mamma oo sa fo shizzle shizzle my nizzle crocodizzle things. Shizzle my nizzle crocodizzle quis arcu. Maecenizzle uhuh ... yih!</p>
+                                <p>Hoy más que nunca todas las organizaciones necesitan diferenciarse unas de otras y sobre todo destacarse.
+                                Nos encargamos de desarrollar, crear y diseñar toda la imagen e identidad corporativa de su empresa, negocio o servicio, y nos ocuparemos de toda la comunicación gráfica que necesite.
+                                Una identidad cuidadosamente construida es de gran ayuda para lograr que una organización, institución o empresa, tengan una proyección acertada.</p>
                             </figcaption>
                         </figure>
                         <br><br><br>
@@ -389,7 +389,8 @@
                             </div>
                             <figcaption>
                                 <h2>Marketing Digital</h2>
-                                <p>Fo shizzle mammasay mammasa mamma oo sa fo shizzle shizzle my nizzle crocodizzle things. Shizzle my nizzle crocodizzle quis arcu. Maecenizzle uhuh ... yih!</p>
+                                <p>Te brindamos la mejor manera de darte a conocer mediante la publicidad. A través de nosotros podrás potenciar el valor de tu marca y conseguir que tu imagen corporativa y servicios se diferencien y se destaquen de tu competencia.
+                                Una de las cosas más importantes a la hora de llevarlas a cabo, es saber bien que es lo que se va a comunicar, a quien y para qué, nosotros nos encargamos del cómo y te orientaremos a encontrar esas respuestas tras nuestra experiencia.</p>
                             </figcaption>
                         </figure>
                     </div>
@@ -433,7 +434,7 @@
                                 <img src="{{ ('assets/img/grid/1.png') }}" >
                                 <figcaption>
                                     <h3>Paginas</h3>
-                                    <span>Sitios con las ultimas tendencias de diseño y desarrollo web.</span>
+                                    <span>El mejor conjunto de tecnologías de software combinadas con los procesos de base de datos para crear una aplicacion adaptada completamente a tu negocio y a tus necesidades.</span>
                                     <a class="page-scroll" href="#contact">Pedir servicio</a>
                                 </figcaption>
                             </figure>
@@ -444,7 +445,7 @@
                                 <img src="{{ ('assets/img/grid/4.png') }}" >
                                 <figcaption>
                                     <h3>Responsive</h3>
-                                    <span>Aplicaciones echas a la medida de cualquier dispositivo movil.</span>
+                                    <span>Optimizamos tu web para que sea vista de la mejor manera desde PCs, laptops, tablets y smartphones, todo esto con el objetivo de mejorar la experiencia de navegación del usuario.</span>
                                     <a class="page-scroll" href="#contact">Pedir servicio</a>
                                 </figcaption>
                             </figure>
@@ -455,7 +456,7 @@
                                 <img src="{{ ('assets/img/grid/2.png') }}" >
                                 <figcaption>
                                     <h3>Empresarial</h3>
-                                    <span>Desarrollamos sistemas para tu empresa a la medida de tus necesidades.</span>
+                                    <span>Diseñamos y desarrollamos para ti un sistema capaz de llevar un registro de datos con métodos de consulta y modificación de los mismos, sistemas de reportes, control de pagos y mucho más.</span>
                                     <a class="page-scroll" href="#contact">Pedir servicio</a>
                                 </figcaption>
                             </figure>
@@ -466,7 +467,7 @@
                                 <img src="{{ ('assets/img/grid/3.png') }}" >
                                 <figcaption>
                                     <h3>eCommerce</h3>
-                                    <span>Sitios de venta virtual para que tu negocio siga creciendo.</span>
+                                    <span>Ofrecemos sitios de venta virtual completamente automatizados y fáciles de usar, en ellos podrás exhibir y vender tus productos para que tu negocio se expanda siga creciendo en el mercado.</span>
                                     <a class="page-scroll" href="#contact">Pedir servicio</a>
                                 </figcaption>
                             </figure>
@@ -499,11 +500,11 @@
         <section id="contact" class="contact-section">
             <div class="container">
             
-                <h1>Contactanos</h1><div class="underlineh1"></div>
+                <h1>¡Contactanos hoy!</h1><div class="underlineh1"></div>
 
                 <br><br>
             
-                <p>Comunícate con nosotros hoy mismo para recibir la mejor asesoría, descubre todo lo que podemos hacer por ti.</p>
+                <p>Si necesitas el cálculo del presupuesto para tu proyecto no dudes en comunícarte completando nuestro formulario de contacto o utilizando nuestros datos para hacernos llegar tu mensaje.</p>
             
                 <br>
                 
