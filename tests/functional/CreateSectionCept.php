@@ -2,41 +2,39 @@
 
 $I = new FunctionalTester($scenario);
 $I->am('a CMS Admin');
-$I->wantTo('create a new section');
+$I->wantTo('crear una nueva seccion');
 
 
 // When
 $I->amOnPage('sections');
 // And
-$I->click('Add a new section');
+$I->click('Agregar nueva seccion');
 
 
 // Then
 $I->seeCurrentUrlEquals('/sections/create');
-$I->see('New section', 'h1');
+$I->see('Nueva seccion', 'h1');
 
 
-$I->amGoingTo('Omit the name field in order to submit an invalid form');
+$I->amGoingTo('Omitir el campo nombre para enviar un formulario invalido');
 // When
-$I->fillField('Slug URL', 'our-company');
-$I->click('Create section');
+$I->fillField('URL', 'our-company');
+$I->click('Crear seccion');
 // Then
-$I->expectTo('See the form again with the errors');
+$I->expectTo('Ver la planilla de nuevo con los errores');
 $I->seeCurrentUrlEquals('/sections/create');
-$I->seeInField('Slug URL', 'our-company');
+$I->seeInField('URL', 'our-company');
 $I->see('The name field is required', '.error');
 
 
-$I->amGoingTo('fill a valid form');
+$I->amGoingTo('Enviar un formulario valido');
 // When
-$I->fillField('Name', 'Our company');
-$I->fillField('Slug URL', 'our-company');
-$I->selectOption('type', 'page');
-$I->selectOption('menu', 1);
-$I->fillField('menu_order', 2);
-$I->selectOption('published', 0);
+$I->fillField('Nombre', 'Our company');
+$I->fillField('URL', 'our-company');
+$I->fillField('type', 'HTML5');
+$I->selectOption('status', 1);
 // And
-$I->click('Create section');
+$I->click('Crear seccion');
 
 
 // Then
@@ -46,8 +44,6 @@ $I->see('Our company', 'h1');
 $I->seeRecord('sections', [
 	'name' => 'Our company',
 	'slug_url' => 'our-company',
-	'type' => 'page',
-	'menu' => 1,
-	'menu_order' => 2,
-	'published' => 0
+	'type' => 'HTML5',
+	'status' => 1
 ]);

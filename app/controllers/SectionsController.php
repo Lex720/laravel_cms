@@ -8,10 +8,8 @@ class SectionsController extends \BaseController {
 	(
 		'name' => 'required',
 		'slug_url' => 'required',
-		'type' => 'required|in:page,blog',
-		'menu' => 'required|in:1,0',
-		'menu_order' => 'required|integer',
-		'published' => 'required|in:1,0'
+		'type' => 'required',
+		'status' => 'required'
 	);
 
 	protected $sectionsRepo;

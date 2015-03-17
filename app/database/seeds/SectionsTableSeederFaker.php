@@ -22,14 +22,13 @@ class SectionsTableSeederFaker extends Seeder {
         for ($i = 0; $i < $num; $i++)
         {
             $name = $faker->unique()->sentence(2);
+            $url = \Str::slug($name);
 
             $sections->add(Sections::create([
                 'name' => $name,
-                'slug_url' => \Str::slug($name),
-                'type' => $faker->randomElement(['page', 'blog']),
-                'menu_order' => rand(1, 10),
-                'menu' => rand(0, 1),
-                'published' => rand(0, 1)
+                'slug_url' => 'http://'.$url.'.com',
+                'type' => $faker->randomElement(['HTML', 'CSS3', 'Bootstrap', 'PHP', 'Laravel']),
+                'status' => rand(0, 1)
             ]));
         }
 

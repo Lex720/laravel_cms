@@ -8,10 +8,10 @@
 
 @section('content')
 
-	<h1>Sections</h1>
+	<h1>Proyectos</h1>
 
 	<p>
-	There are {{ $sections->getTotal() }} sections, showing page {{ $sections->getCurrentPage() }} of {{ $sections->getLastPage() }}
+	Existen {{ $sections->getTotal() }} proyectos, mostrando pagina {{ $sections->getCurrentPage() }} de {{ $sections->getLastPage() }}
 	</p>
 
 	<br><br>
@@ -20,10 +20,10 @@
 		
 		<thead>
 			<tr>
-				<th>Name</th>
-				<th>Slug URL</th>
-				<th>Published</th>
-				<th>Menu</th>
+				<th>Nombre</th>
+				<th>URL</th>
+				<th>Tipo</th>
+				<th>Status</th>
 			</tr>
 		</thead>
 
@@ -32,9 +32,9 @@
 
 			<tr>
 				<td class="name">{{ $section->name }}</td>
-				<td>{{ $section->slug_url }}</td>
-				<td>{{ $section->published ? "Published" : "Draft" }}</td>
-				<td>{{ $section->menu ? "Show in menu" : "Don't show in menu" }}</td>
+				<td><a href="{{ $section->slug_url }}">Enlace</a></td>
+				<td>{{ $section->type }}</td>
+				<td>{{ $section->status ? "Activa" : "Inactiva" }}</td>
 			</tr>
 
 			@endforeach

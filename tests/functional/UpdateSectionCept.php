@@ -2,7 +2,7 @@
 
 $I = new FunctionalTester($scenario);
 $I->am('a CMS Admin');
-$I->wantTo('Update a section');
+$I->wantTo('Actualizar una seccion');
 
 
 // Metodo personalizado para haveRecord
@@ -11,54 +11,50 @@ $I->haveSection();
 
 // And
 $I->amOnPage('sections/1');
-$I->see('Edit section', '.btn-edit');
+$I->see('Editar', '.btn-edit');
 
 
-$I->amGoingTo('Edit a section');
+$I->amGoingTo('Editar la seccion');
 // When
-$I->click('Edit section');
+$I->click('Editar');
 // Then
 $I->seeCurrentUrlEquals('/sections/1/edit');
 // And
-$I->see('Edit section "Our company"', 'h1');
-$I->seeInField('name', 'Our company');
-$I->seeInField('slug_url', 'our-company');
-$I->seeOptionIsSelected('type', 'Page');
-$I->seeOptionIsSelected('menu', '1');
-$I->seeInField('menu_order', '2');
-$I->seeOptionIsSelected('published', '0');
+$I->see('Editar "MielCanela, C.A"', 'h1');
+$I->seeInField('name', 'MielCanela, C.A');
+$I->seeInField('slug_url', 'http://mielcanela.com.ve');
+$I->seeInField('type', 'HTML5, CSS3, Bootstrap, Jquery');
+$I->seeOptionIsSelected('status', '1');
 
 
-$I->amGoingTo('Submit an invalid form');
+$I->amGoingTo('Enviar un formulario invalido');
 // When 
 $I->fillField('name', '');
 // And
-$I->click('Update section');
+$I->click('Actualizar');
 // Then
-$I->expectTo('See the form again with the errors');
+$I->expectTo('Ver la planilla de nuevo con los errores');
 $I->seeCurrentUrlEquals('/sections/1/edit');
 $I->seeInField('name', '');
 $I->see('The name field is required', '.error');
 
 
-$I->amGoingTo('Submit a valid form');
+$I->amGoingTo('Enviar un formulario valido');
 // When 
-$I->fillField('Name', 'Who we are');
-$I->selectOption('published', 1);
+$I->fillField('Nombre', 'MielCanela1');
+$I->selectOption('status', 0);
 // And
-$I->click('Update section');
+$I->click('Actualizar');
 // Then
-$I->expectTo('See the section details with the new changes');
+$I->expectTo('Ver la seccion de detalles con los nuevos cambios');
 $I->seeCurrentUrlEquals('/sections/1');
-$I->see('Who we are', 'h1');
+$I->see('MielCanela1', 'h1');
 $I->seeRecord('sections', [
 	'id' => 1,
 	// changed
-	'name' => 'Who we are',
-	'published' => 1,
+	'name' => 'MielCanela1',
+	'status' => 0,
 	// same
-	'slug_url' => 'our-company',
-	'type' => 'page',
-	'menu' => 1,
-	'menu_order' => 2,
+	'slug_url' => 'http://mielcanela.com.ve',
+	'type' => 'HTML5, CSS3, Bootstrap, Jquery'
 ]);

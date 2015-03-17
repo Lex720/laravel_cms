@@ -2,7 +2,7 @@
 
 abstract class BaseRepo {
 
-	public $filters = ['name', 'published', 'menu'];
+	public $filters = ['name', 'status'];
 
 	abstract public function getModel();
 
@@ -51,14 +51,9 @@ abstract class BaseRepo {
 			$q->where('name', 'LIKE', "%$search%");
 		}
 
-		if ( isset ($data['published']) )
+		if ( isset ($data['status']) )
 		{
-			$q->where('published', $data['published']);
-		}
-
-		if ( isset ($data['menu']) )
-		{
-			$q->where('menu', $data['menu']);
+			$q->where('status', $data['status']);
 		}
 
 		return $paginate ? 

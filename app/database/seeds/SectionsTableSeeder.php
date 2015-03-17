@@ -10,30 +10,38 @@ class SectionsTableSeeder extends Seeder {
     public function run()
     {
         Sections::create([
-            'name' => 'Our company',
-            'slug_url'  => 'our-company',
-            'menu'   => 1,
-            'menu_order'      => '1',
-            'type'   =>  'page',
-            'published'   => 1
+            'name' => 'MielCanela, C.A',
+            'slug_url'  => 'http://mielcanela.com.ve',
+            'type'   =>  'HTML5, CSS3, Bootstrap, Jquery',
+            'status'   => 1
         ]);
 
         Sections::create([
-            'name' => 'Services',
-            'slug_url'  => 'services',
-            'menu'   => 0,
-            'menu_order'      => '2',
-            'type'   =>  'blog',
-            'published'   => 0
+            'name' => 'Grupo Guerra Gonzalez, C.A',
+            'slug_url'  => 'http://visiopro.com.ve/site/g3/index.php',
+            'type'   =>  'HTML5, CSS3, Bootstrap, Jquery',
+            'status'   => 0
         ]);
 
         Sections::create([
-            'name' => 'Contact Us',
-            'slug_url'  => 'contact-us',
-            'menu'   => 1,
-            'menu_order'      => '3',
-            'type'   =>  'page',
-            'published'   => 1
+            'name' => 'Centro Virgen del Valle',
+            'slug_url'  => 'http://visiopro.com.ve/site/cvdv',
+            'type'   =>  'HTML5, CSS3',
+            'status'   => 0
+        ]);
+
+        Sections::create([
+            'name' => 'DISPAMENCA',
+            'slug_url'  => 'http://visiopro.com.ve/site/dispamenca',
+            'type'   =>  'PHP, HTML5, CSS3, Flash',
+            'status'   => 0
+        ]);
+
+        Sections::create([
+            'name' => 'Manual Google Apps EOCA',
+            'slug_url'  => 'http://visiopro.com.ve/site/eoca',
+            'type'   =>  'HTML5, CSS3, Flash',
+            'status'   => 0
         ]);
     }
 

@@ -10,43 +10,35 @@
 
 	<h1> {{ $sections->name }} </h1>
 
-	<table>
+	<table class="table">
 		<tr>
-			<th>Slug URL:</th>
-			<td class="slug_url"> {{ $sections->slug_url }} </td>
+			<th>URL:</th>
+			<td class="slug_url"><a href="{{ $sections->slug_url }}">{{ $sections->slug_url }}</a></td>
 		</tr>
 		<tr>
-			<th>Type:</th>
+			<th>Tipo:</th>
 			<td class="type"> {{ $sections->type }} </td>
 		</tr>
 		<tr>
-			<th>Menu:</th>
-			<td class="menu"> {{ $sections->menu ? "Show in menu" : "Don't show in menu" }} </td>
-		</tr>
-		<tr>
-			<th>Menu Order:</th>
-			<td class="menu_order"> {{ $sections->menu_order }} </td>
-		</tr>
-		<tr>
 			<th>Status:</th>
-			<td class="published"> {{ $sections->published ? "Published" : "Draft" }} </td>
+			<td class="status"> {{ $sections->status ? "Activa" : "Inactiva" }} </td>
 		</tr>
 	</table>
 
 	<br>
 
 	<p>
-		{{ HTML::linkRoute('sections.edit', 'Edit section', ['id' => $sections->id], ['class' => 'btn-edit']) }}
+		{{ HTML::linkRoute('sections.edit', 'Editar', ['id' => $sections->id], ['class' => 'btn-edit']) }}
 	</p>
 
 	<p>
 		{{ Form::open(['route' => ['sections.destroy', $sections->id], 'method' => 'DELETE']) }}
-			{{ Form::button('Delete section', ['type' => 'submit', 'class' => 'btn-del']) }}
+			{{ Form::button('Eliminar', ['type' => 'submit', 'class' => 'btn-del']) }}
 		{{ Form::close() }}
 	</p>
 
 	<p>
-		{{ HTML::link(URL::to('sections'), 'Back', ['class' => 'back']) }}
+		{{ HTML::link(URL::to('sections'), 'Regresar', ['class' => 'back']) }}
 	</p>
 
 @stop

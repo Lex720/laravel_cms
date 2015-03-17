@@ -2,7 +2,7 @@
 
 $I = new FunctionalTester($scenario);
 $I->am('a CMS Admin');
-$I->wantTo('delete a section');
+$I->wantTo('eliminar una seccion');
 
 
 // Metodo personalizado para haveRecord
@@ -13,12 +13,12 @@ $I->haveSection();
 // And
 $I->amOnPage('sections/1');
 // Then
-$I->see('Delete section', '.btn-del');
+$I->see('Eliminar', '.btn-del');
 
 
-$I->amGoingTo('Delete a section');
+$I->amGoingTo('Eliminar una seccion');
 // When
-$I->click('Delete section');
+$I->click('Eliminar');
 // Then
 $I->seeCurrentUrlEquals('/sections');
 $I->dontSeeRecord('sections', [

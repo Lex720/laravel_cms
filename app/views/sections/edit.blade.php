@@ -8,20 +8,20 @@
 
 @section('content')
 
-  <h1>Edit section "{{ $sections->name }}"</h1>
+  <h1>Editar "{{ $sections->name }}"</h1>
 
  	{{ Form::model($sections, ['route' => ['sections.update', $sections->id], 'method' => 'PUT']) }}
 
  		@include ('sections/partials/fields')
 
  		<p>
- 			{{ Form::submit('Update section') }}
+ 			{{ Form::submit('Actualizar') }}
  		</p>
 
  	{{ Form::close() }}
 
  	<p>
-		{{ HTML::linkRoute('sections.index', 'Back') }}
+		{{ HTML::linkRoute('sections.index', 'Regresar') }}
 	</p>
 
 @stop

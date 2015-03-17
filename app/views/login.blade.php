@@ -23,14 +23,14 @@
 
 			<h2 class="form-signin-heading">Ingrese sus datos:</h2>
 			
-			{{ Form::text('username', null, ['class' => 'form-control', 'placeholder' => 'Username', 'autofocus' => '']) }}
-			{{ Form::password('password', ['class' => 'form-control', 'placeholder' => 'Password']) }}
+			{{ Form::text('username', null, ['class' => 'form-control', 'placeholder' => 'Usuario', 'autofocus' => '']) }}
+			{{ Form::password('password', ['class' => 'form-control', 'placeholder' => 'Contraseña']) }}
 			
 			<div class="checkbox">
 				<label> {{ Form::checkbox('remember', true) }} ¿Recordar? </label>
 			</div>
 
-			{{ Form::submit('Log in', ['class' => 'btn btn-primary btn-block']) }}
+			{{ Form::submit('Ingresar', ['class' => 'btn btn-primary btn-block']) }}
 
 		{{ Form::close() }}
 

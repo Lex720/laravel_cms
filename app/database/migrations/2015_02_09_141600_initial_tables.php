@@ -30,13 +30,10 @@ class InitialTables extends Migration {
 
 			$table->string('name');
 			$table->string('slug_url');
-			$table->boolean('menu')->default(true);
-			$table->tinyInteger('menu_order')->unsigned()->default(200);
 			$table->string('type');
-			$table->boolean('published')->default(false);
+			$table->boolean('status')->default(false);
 
 			$table->timestamps(); //created_at, update_at
-			$table->timestamp('published_at');
 			$table->softDeletes(); //delete_at
 
 		});

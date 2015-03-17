@@ -43,12 +43,12 @@
           <ul class="nav navbar-nav">
 
             <li class="active"> {{ HTML::linkRoute('sections.index', 'CMS') }} </li>
-            <li class="active"> {{ HTML::linkRoute('sections.create', 'Add a new section') }} </li>
+            <li class="active"> {{ HTML::linkRoute('sections.create', 'Agregar nueva seccion') }} </li>
 
             <li class="active">
             <?php
-            if (Auth::check()) echo HTML::linkAction('AuthController@logOut', 'Logout');
-  	        else echo HTML::linkAction('AuthController@showLogin', 'Login');
+            if (Auth::check()) echo HTML::linkAction('AuthController@logOut', 'Salir');
+  	        else echo HTML::linkAction('AuthController@showLogin', 'Ingresar');
   	        ?>
   	        </li>
 

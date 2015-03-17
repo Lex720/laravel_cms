@@ -1,7 +1,7 @@
 <?php 
 $I = new FunctionalTester($scenario);
 $I->am('a CMS admin');
-$I->wantTo('filter de sections list');
+$I->wantTo('filtrar la lista de secciones');
 
 
 // Metodos personalizados para haveRecord - tests\_support\FunctionalHelper.php
@@ -14,37 +14,27 @@ $I->seeElement('input', ['name' => 'name']);
 
 
 // When 
-$I->fillField('name', 'company');
-$I->selectOption('published', '1');
+$I->fillField('name', 'mielcanela');
+$I->selectOption('status', '0');
 // And
-$I->click('Filter sections');
+$I->click('Filtrar');
 
 
 // Then
-$I->seeCurrentUrlEquals('/sections?name=company&published=1&menu=');
-$I->expectTo('not to see our company record');
+$I->seeCurrentUrlEquals('/sections?name=mielcanela&status=0');
+$I->expectTo('No encontrar resultados');
 // Then
-$I->see('There are 0 sections');
-$I->dontSee('Our company', 'td.name');
-$I->seeInField('name', 'company');
+$I->see('Existen 0 proyectos');
+$I->dontSee('MielCanela, C.A', 'td.name');
+$I->seeInField('name', 'mielcanela');
 
 
 // When
-$I->selectOption('published', '0');
-$I->selectOption('menu', '0');
+$I->seeOptionIsSelected('status', 'Inactiva');
+$I->selectOption('status', '1');
 // And
-$I->click('Filter sections');
+$I->click('Filtrar');
 // Then
-$I->see('There are 0 sections');
-$I->dontSee('Our company', 'td.name');
-
-
-// When
-$I->seeOptionIsSelected('published', 'Draft');
-$I->selectOption('menu', '1');
-// And
-$I->click('Filter sections');
-// Then
-$I->see('Our company', 'td.name');
+$I->see('MielCanela, C.A', 'td.name');
 $I->dontSee($sections->first()->name, 'td.name');
 $I->dontSee($sections->last()->name, 'td.name');
